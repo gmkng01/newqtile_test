@@ -96,7 +96,7 @@ for aur_program in "${aur_programs[@]}"; do
 done
 
 # Change to the newqtil directory
-cd ~/newqtil
+cd ~/newqtile_test
 
 # Additional commands for fonts setup
 echo "Setting up fonts..."

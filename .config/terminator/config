@@ -1,0 +1,27 @@
+[global_config]
+  dbus = False
+  borderless = True
+  extra_styling = False
+[keybindings]
+[profiles]
+  [[default]]
+    icon_bell = False
+    background_color = "#1e252c"
+    background_darkness = 0.91
+    background_type = transparent
+    font = JetBrainsMono Nerd Font Propo Light 15
+    foreground_color = "#deddda"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    use_system_font = False
+    title_use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

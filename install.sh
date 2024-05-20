@@ -35,6 +35,10 @@ programs=(
 	"p7zip"
 	"nemo"
 	"python-dbus-next"
+	"mtpfs"
+	"gvfs-mtp"
+	"gvfs-gphoto2"
+	"telegram-desktop"
 )
 
 # Update the package database and upgrade the system
@@ -47,7 +51,7 @@ for program in "${programs[@]}"; do
     if pacman -Qi $program &> /dev/null; then
         echo "$program is already installed."
     else
-        sudo pacman -S --noconfirm $program
+        sudo pacman -Sy --noconfirm $program
     fi
 done
 
@@ -74,6 +78,7 @@ aur_programs=(
     "envycontrol"
     "pfetch"
     "python-pulsectl"
+	"jmtpfs"
 )
 
 # Install each AUR program via yay
@@ -82,9 +87,11 @@ for aur_program in "${aur_programs[@]}"; do
     yay -S --noconfirm $aur_program
 done
 
+
+
 # Additional commands for fonts setup
 echo "Setting up fonts..."
-cd /usr/local/share/
+# cd /usr/local/share/
 sudo cp -rT fonts /usr/local/share/
 cd /usr/local/share/fonts/
 sudo fc-cache -vf
@@ -103,5 +110,9 @@ cp -T .bashrc ~/
 # Copy 50-libinput.conf to /etc/X11/xorg.conf.d/
 echo "Copying 50-libinput.conf to /etc/X11/xorg.conf.d/..."
 sudo cp 50-libinput.conf /etc/X11/xorg.conf.d/
+
+# Enable Bluetooth service
+echo "Enabling Bluetooth service..."
+sudo systemctl enable bluetooth
 
 echo "Installation complete!"

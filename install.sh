@@ -97,6 +97,7 @@ cd /usr/local/share/fonts/
 sudo fc-cache -vf
 
 # Change to the newqtil directory
+cd
 cd newqtil
 
 # Copy .config directory to the home directory

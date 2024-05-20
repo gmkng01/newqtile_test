@@ -105,7 +105,7 @@ sudo fc-cache -vf
 
 # Copy .config directory to the home directory
 echo "Copying .config directory to the home directory..."
-sudo cp -rT .config ~/
+cp -rT .config ~/
 
 # Copy .bashrc to the home directory
 echo "Copying .bashrc to the home directory..."

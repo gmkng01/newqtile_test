@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Update mirror list
+sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
+echo "Server = https://mirror.osbeck.com/archlinux/\$repo/os/\$arch
+Server = http://irltoolkit.mm.fcix.net/archlinux/\$repo/os/\$arch
+Server = https://opencolo.mm.fcix.net/archlinux/\$repo/os/\$arch
+Server = https://mirror.yuki.net.uk/archlinux/\$repo/os/\$arch
+Server = https://irltoolkit.mm.fcix.net/archlinux/\$repo/os/\$arch
+Server = https://mirror.nag.albony.in/archlinux/\$repo/os/\$arch
+Server = https://mirror.sahil.world/archlinux/\$repo/os/\$arch" | sudo tee /etc/pacman.d/mirrorlist
+
+
 # List of programs to install
 programs=(
     "neovim"

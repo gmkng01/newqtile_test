@@ -109,7 +109,7 @@ sudo cp -rT .config ~/
 
 # Copy .bashrc to the home directory
 echo "Copying .bashrc to the home directory..."
-cp -T .bashrc ~/
+cp -T .bashrc ~/.bashrc
 
 # Copy 50-libinput.conf to /etc/X11/xorg.conf.d/
 echo "Copying 50-libinput.conf to /etc/X11/xorg.conf.d/..."

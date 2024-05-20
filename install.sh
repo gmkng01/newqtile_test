@@ -47,6 +47,8 @@ programs=(
     "gvfs-mtp"
     "gvfs-gphoto2"
     "telegram-desktop"
+	"trayer"
+	"lxappearance"
 )
 
 # Update the package database and upgrade the system
@@ -105,7 +107,7 @@ sudo fc-cache -vf
 
 # Copy .config directory to the home directory
 echo "Copying .config directory to the home directory..."
-cp -rT .config ~/
+cp -rT .config ~/.config/
 
 # Copy .bashrc to the home directory
 echo "Copying .bashrc to the home directory..."

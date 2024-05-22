@@ -1,13 +1,7 @@
 #!/bin/bash
 
 # Update mirror list
-sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
-echo "Server = https://mirror.osbeck.com/archlinux/\$repo/os/\$arch
-Server = http://irltoolkit.mm.fcix.net/archlinux/\$repo/os/\$arch
-Server = https://opencolo.mm.fcix.net/archlinux/\$repo/os/\$arch
-Server = https://mirror.yuki.net.uk/archlinux/\$repo/os/\$arch
-Server = https://mirror.nag.albony.in/archlinux/\$repo/os/\$arch
-Server = https://mirror.sahil.world/archlinux/\$repo/os/\$arch" | sudo tee /etc/pacman.d/mirrorlist
+./mirror.sh
 
 # List of programs to install
 programs=(
@@ -95,7 +89,7 @@ for aur_program in "${aur_programs[@]}"; do
     yay -S --noconfirm $aur_program
 done
 
-# Change to the newqtil directory
+# Change to the newqtile_test directory
 cd ~/newqtile_test
 
 # Additional commands for fonts setup
@@ -121,5 +115,3 @@ sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 
 echo "Installation complete!"
-
-

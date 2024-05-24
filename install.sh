@@ -108,8 +108,9 @@ echo "Copying .bashrc to the home directory..."
 cp -T .bashrc ~/.bashrc
 
 # Copy 50-libinput.conf to /etc/X11/xorg.conf.d/
-echo "Copying 50-libinput.conf to /etc/X11/xorg.conf.d/..."
+echo "Copying 50-libinput.conf and 10-serverflags.conf to /etc/X11/xorg.conf.d/..."
 sudo cp 50-libinput.conf /etc/X11/xorg.conf.d/
+sudo cp 10-serverflags.conf /etc/X11/xorg.conf.d/
 
 # Enable Bluetooth service
 echo "Enabling Bluetooth service..."

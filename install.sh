@@ -41,6 +41,7 @@ programs=(
     "telegram-desktop"
 	"trayer"
 	"lxappearance"
+    "lightdm-slick-greeter"
 )
 
 # Update the package database and upgrade the system
@@ -81,6 +82,7 @@ aur_programs=(
     "pfetch"
     "python-pulsectl"
     "jmtpfs"
+    "lightdm-settings"
 )
 
 # Install each AUR program via yay
@@ -113,5 +115,9 @@ sudo cp 50-libinput.conf /etc/X11/xorg.conf.d/
 echo "Enabling Bluetooth service..."
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
+
+# Copy lightdm config
+echo "Copying lightdm configration to /etc/"
+sudo cp -rT lightdm /etc/lightdm
 
 echo "Installation complete!"

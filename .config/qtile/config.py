@@ -4,7 +4,8 @@ from subprocess import Popen
 from MyBars import mybar, mygroup
 from libqtile import layout, hook
 from keybindings import mykeys, mymouse
-
+# from colorthief import ColorThief
+# import colorsys
 
 screens =   mybar
 keys =      mykeys

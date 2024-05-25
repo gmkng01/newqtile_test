@@ -135,7 +135,8 @@ dark_sky2 = {
     'gr':               '#FF9800'
 }
 
-
+# from colorthief import ColorThief
+# import colorsys
 
 
 

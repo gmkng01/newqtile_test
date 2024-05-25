@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update mirror list
-./mirror.sh
+# ./mirror.sh
 
 # List of programs to install
 programs=(

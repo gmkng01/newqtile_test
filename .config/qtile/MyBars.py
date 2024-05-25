@@ -5,7 +5,10 @@ from libqtile.lazy import lazy
 from battery import BatteryWidget
 from libqtile.config import Group, Match, Screen
 from func_var import bk, fr, bk2, fr2, gr, trn, urgent  ## Colors
-from func_var import widget_font, widget_font_symbols   ## Font
+from func_var import widget_font, widget_font_symbols, home  ## Font
+
+
+# wall = 
 
 mybar = [Screen
          (top = Bar
@@ -237,7 +240,8 @@ mybar = [Screen
                         font=widget_font,
                         fontsize=18,
                         background=bk,
-                        foreground = fr
+                        foreground = fr,
+                        low_battery_script=f"{home}/.config/qtile/scripts/battery_low.sh"
                         )   
                                                 
                 ],

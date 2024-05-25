@@ -2,7 +2,7 @@ import colors, os
 
 home = os.path.expanduser('~')
 
-co = colors.star_night
+co = colors.vintage
 fix = colors.changable
 bk = co['bk']
 fr = co['fr']

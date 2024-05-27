@@ -1,14 +1,17 @@
 import colors, os
+import Color_picker as cp
 
 home = os.path.expanduser('~')
 
-co = colors.vintage
+co = cp.wall_color
 fix = colors.changable
+
 bk = co['bk']
 fr = co['fr']
 bk2 = co['bk2']
 fr2 = co['fr2']
 gr = co['gr']
+
 trn = fix['trn']
 urgent = fix['dark_red']
 
@@ -38,7 +41,8 @@ va = {
     "screenshot_full":          'sh -c "xfce4-screenshooter --fullscreen --clipboard --save ~/Pictures/Screenshots/Screenshot_$(date +\'%Y-%m-%d_%H:%M:%S\').png"',
     "screenshot_window":        'sh -c "xfce4-screenshooter -w --clipboard --save ~/Pictures/Screenshots/Screenshot_$(date +\'%Y-%m-%d_%H:%M:%S\').png"',
     "screenshot_region":        'sh -c "xfce4-screenshooter -r --clipboard --save ~/Pictures/Screenshots/Screenshot_$(date +\'%Y-%m-%d_%H:%M:%S\').png"',
-    "screenshot_gui":           "xfce4-screenshooter"
+    "screenshot_gui":           "xfce4-screenshooter",
+    "trayer":                   f"killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top"
     }
 
 vriable = va

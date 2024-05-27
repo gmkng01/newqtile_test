@@ -51,9 +51,9 @@ wl_input_rules = None
 
 wmname = "Saitama"
 
-@hook.subscribe.startup_once
+@hook.subscribe.startup
 def autostart():
     home = os.path.expanduser('~')
     Popen([home + '/.config/qtile/scripts/autostart.sh'])
-    tr = f'trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top'    
+    tr = f'killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top'    
     Popen(tr, shell=True)

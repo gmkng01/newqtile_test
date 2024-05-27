@@ -22,7 +22,7 @@
 #     defaults = [
 #         ('update_interval', 1, 'Update interval in seconds'),
 #     ]
-
+    
 #     def __init__(self, font="Arial", fontsize=12, foreground="ffffff", background="000000", **config):
 #         super().__init__(text="", **config)
 #         self.add_defaults(BatteryWidget.defaults)

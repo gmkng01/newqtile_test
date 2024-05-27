@@ -18,7 +18,8 @@ declare -a options=(
 "Star Night"
 "Black Gray"
 "Dark Sky2"
-"Light Chocalate"
+"Light Chocalate" 
+"Choose According to the wallpaper"
 )
 
 DARKS='\033[0;34m' 
@@ -73,6 +74,10 @@ case $choice in
     
     'Light Chocalate')
         sed -i '/co =/c\co = colors.light_chocalate' $config && qtile cmd-obj -o cmd -f restart && killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x4F5F73 --margin 10 --distance 10 --distancefrom top &;;
+
+    'Choose According to the wallpaper')
+        sed -i '/co =/c\co = cp.wall_color' $config && qtile cmd-obj -o cmd -f restart && killall trayer &;;
+
 
     'quit')
         echo "No theme chosen" && exit 1 ;;

@@ -42,6 +42,7 @@ programs=(
 	"trayer"
 	"lxappearance"
     "lightdm-slick-greeter"
+    "xfce4-screenshooter"
 )
 
 # Update the package database and upgrade the system

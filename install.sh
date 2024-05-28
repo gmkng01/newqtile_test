@@ -84,6 +84,7 @@ aur_programs=(
     "python-pulsectl"
     "jmtpfs"
     "lightdm-settings"
+    "python-colorthief"
 )
 
 # Install each AUR program via yay

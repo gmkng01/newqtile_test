@@ -7,8 +7,24 @@ from libqtile.config import Group, Match, Screen
 from func_var import bk, fr, bk2, fr2, gr, trn, urgent  ## Colors
 from func_var import widget_font, widget_font_symbols, home  ## Font
 
+from qtile_extras.widget.decorations import PowerLineDecoration
 
-# wall = 
+
+
+
+arrow_powerlineLeft = {
+    "decorations": [
+        PowerLineDecoration(
+            path="forward_slash",
+            padding_y=5,
+            size=22,
+        )
+    ]
+}
+
+
+
+ 
 
 mybar = [Screen
          (top = Bar
@@ -21,7 +37,8 @@ mybar = [Screen
                         fontsize = 25,
                         # mouse_callbacks = {'Button1': rofi_menu,},
                         padding = 4,  
-                        font = widget_font                     
+                        font = widget_font,
+                        **arrow_powerlineLeft                
                         ),
                 widget.TextBox(
                         text = '',
@@ -49,7 +66,8 @@ mybar = [Screen
                         urgent_alert_method="block",
                         urgent_border=urgent,
                         background = bk2,
-                        disable_drag=True,                        
+                        disable_drag=True, 
+                        **arrow_powerlineLeft                     
                         ),
 
                 widget.TextBox(
@@ -231,18 +249,47 @@ mybar = [Screen
                         text = '',
                         font = widget_font_symbols,
                         background = bk2,
-                        foreground = bk,
+                        foreground = fr,
                         padding = 0,
                         fontsize = 22
                         ),
 
+                # widget.PulseVolume(
+                #     font = widget_font,
+                #     fontsize = 18,
+                #     background = bk,
+                #     foreground = fr,
+                #     fmt = '{}'
+                
+                # ),
+
+                # widget.TextBox(
+                #         text = '',
+                #         font = widget_font_symbols,
+                #         background = bk,
+                #         foreground = fr,
+                #         padding = 0,
+                #         fontsize = 22
+                #         ),
+                
+
                 BatteryWidget(
                         font=widget_font,
                         fontsize=18,
-                        background=bk,
-                        foreground = fr,
+                        background=fr,
+                        foreground = bk,
                         low_battery_script=f"{home}/.config/qtile/scripts/battery_low.sh"
-                        )   
+                        ),
+
+                widget.TextBox(
+                        text = '',
+                        font = widget_font_symbols,
+                        background = bk,
+                        foreground = fr,
+                        padding = 0,
+                        fontsize = 25
+                        ),
+                 
                                                 
                 ],
                 background=trn, size=26, margin=[10, 85, 0, 10],
@@ -252,8 +299,8 @@ mybar = [Screen
 mygroup = [
     Group('1', label="", matches = [Match(wm_class = vriable['browser'])],layout='bsp'),
     Group('2', label="󰘐", matches = [Match(wm_class = vriable["vscode"])],layout='max'),
-    Group('3', label="󰨊", layout='bsp'), 
-    Group('4', label="",matches = [Match(wm_class = vriable['file_manager'])], layout='bsp'),
+    Group('3', label="", layout='bsp'), 
+    Group('4', label="",matches = [Match(wm_class = vriable['file_manager'])], layout='bsp'),
     Group('5', label="󰊠", matches = [Match(wm_class = "discord"), Match(wm_class="TelegramDesktop")], layout='bsp'),
     Group('6', label="", layout='bsp'),
     Group('7', label="", layout='bsp'),

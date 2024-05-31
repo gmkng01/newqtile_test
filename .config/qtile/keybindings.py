@@ -1,10 +1,15 @@
 import os
 from func_var import vriable,bk
 from MyBars import mygroup
+from subprocess import Popen
 from libqtile.lazy import lazy
 from libqtile.config import Key, Click, Drag
 
 home = os.path.expanduser('~')
+
+def trayer():
+    tr = f'killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top'    
+    Popen(tr, shell=True)
 
 mykeys = [
         ### The essentials launches
@@ -171,7 +176,7 @@ mykeys = [
 
         Key(["control", "shift"], "Print", lazy.spawn("xfce4-screenshooter")),
 
-        Key(["mod1","shift"], "t", lazy.spawn(f"killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top")),
+        Key(["mod1","shift"], "t", lazy.function(trayer())),
 
 ]
 

@@ -4,8 +4,6 @@ from subprocess import Popen
 from MyBars import mybar, mygroup
 from libqtile import layout, hook
 from keybindings import mykeys, mymouse
-# from colorthief import ColorThief
-# import colorsys
 
 screens =   mybar
 keys =      mykeys
@@ -51,9 +49,10 @@ wl_input_rules = None
 
 wmname = "Saitama"
 
-@hook.subscribe.startup
+@hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser('~')
     Popen([home + '/.config/qtile/scripts/autostart.sh'])
-    tr = f'killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top'    
+    tr = f'trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top'    
     Popen(tr, shell=True)
+    Popen([home + '/.config/qtile/scripts/battery_low.sh'])

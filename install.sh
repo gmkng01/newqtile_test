@@ -5,6 +5,7 @@
 
 # List of programs to install
 programs=(
+    "qtile"
     "neovim"
     "git"
     "htop"
@@ -43,6 +44,7 @@ programs=(
 	"lxappearance"
     "lightdm-slick-greeter"
     "xfce4-screenshooter"
+    "upower"
 )
 
 # Update the package database and upgrade the system
@@ -85,6 +87,8 @@ aur_programs=(
     "jmtpfs"
     "lightdm-settings"
     "python-colorthief"
+    "volctl"
+    "qtile-extras"
 )
 
 # Install each AUR program via yay

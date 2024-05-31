@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-config="/home/abhi/.config/qtile/func_var.py"
+config="/home/$USER/.config/qtile/func_var.py"
 
 declare -a options=(
 "Darks"
@@ -76,7 +76,7 @@ case $choice in
         sed -i '/co =/c\co = colors.light_chocalate' $config && qtile cmd-obj -o cmd -f restart && killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x4F5F73 --margin 10 --distance 10 --distancefrom top &;;
 
     'Choose According to the wallpaper')
-        sed -i '/co =/c\co = cp.wall_color' $config && qtile cmd-obj -o cmd -f restart && killall trayer &;;
+        sed -i '/co =/c\co = cp.wall_color' $config && qtile cmd-obj -o cmd -f restart &;;
 
 
     'quit')

@@ -7,8 +7,9 @@ picom --no-fading-openclose &
 nm-applet &
 blueman-applet &
 # cbatticon &
-# volctl &
+volctl &
 dunstify &
 nitrogen --restore &
 lxsession &
+
 

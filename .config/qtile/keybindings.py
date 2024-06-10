@@ -51,10 +51,7 @@ mykeys = [
 
         Key(["mod1"], "b", lazy.spawn(vriable["bluetooth"]), 
             desc='blueman-manager'),   
-
-        
-
-        
+       
         
         ### System controls
 
@@ -175,8 +172,6 @@ mykeys = [
         Key(["control", "mod4"], "Print", lazy.spawn(vriable["screenshot_window"])),
 
         Key(["control", "shift"], "Print", lazy.spawn("xfce4-screenshooter")),
-
-        Key(["mod1","shift"], "t", lazy.function(trayer())),
 
 ]
 

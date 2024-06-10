@@ -1,8 +1,10 @@
 import os
 from func_var import bk
+
 from subprocess import Popen
 from MyBars import mybar, mygroup
 from libqtile import layout, hook
+from libqtile.config import Match
 from keybindings import mykeys, mymouse
 
 screens =   mybar
@@ -23,11 +25,15 @@ layouts = [
        max_border_width = 0,
        margin =  [10, 10, 10, 10],
     ),
-    layout.Floating(
+    layout.Floating(        
        border_width = 0,
        fullscreen_border_width = 0,
        max_border_width = 0,
        margin =  [0, 0, 0, 0],
+       float_rules=[
+        Match(wm_class='blueman-manager'),
+        Match(wm_class='pavucontrol')
+    ],
     )
 ]
 

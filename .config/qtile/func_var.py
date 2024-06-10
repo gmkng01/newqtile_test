@@ -16,12 +16,12 @@ trn = fix['trn']
 urgent = fix['dark_red']
 
 widget_font = 'NFS font'
-widget_font_symbols = 'JetBrainsMono Nerd Font Mono'
+widget_font_symbols = 'JetBrainsMono Nerd Font Mono Italic'
 
 va = {
     "browser" :                 "firefox",
     "trml":                     "terminator",
-    "vscode":                   "code",
+    "vscode":                   "emacs",
     "rofi_menu":                "rofi -show drun -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
     "rofi_windows":             "rofi -show window -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
     "rofi_file":                "rofi -show filebrowser -theme ~/.config/rofi/launchers/type-1/style-7.rasi",

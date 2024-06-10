@@ -1,4 +1,5 @@
 from libqtile import  widget
+# from libqtile import qtile
 from func_var import vriable
 from libqtile.bar import Bar
 from libqtile.lazy import lazy
@@ -7,24 +8,9 @@ from libqtile.config import Group, Match, Screen
 from func_var import bk, fr, bk2, fr2, gr, trn, urgent  ## Colors
 from func_var import widget_font, widget_font_symbols, home  ## Font
 
-from qtile_extras.widget.decorations import PowerLineDecoration
+from qtile_extras import  widget as xwidget
 
-
-
-
-arrow_powerlineLeft = {
-    "decorations": [
-        PowerLineDecoration(
-            path="forward_slash",
-            padding_y=5,
-            size=22,
-        )
-    ]
-}
-
-
-
- 
+# from test import NumLockIndicator
 
 mybar = [Screen
          (top = Bar
@@ -38,7 +24,7 @@ mybar = [Screen
                         # mouse_callbacks = {'Button1': rofi_menu,},
                         padding = 4,  
                         font = widget_font,
-                        **arrow_powerlineLeft                
+                        # **arrow_powerlineLeft                
                         ),
                 widget.TextBox(
                         text = '',
@@ -46,7 +32,7 @@ mybar = [Screen
                         background = bk2,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
                 widget.GroupBox(
                         font="Symbols Nerd Font",
@@ -67,7 +53,7 @@ mybar = [Screen
                         urgent_border=urgent,
                         background = bk2,
                         disable_drag=True, 
-                        **arrow_powerlineLeft                     
+                        # **arrow_powerlineLeft                     
                         ),
 
                 widget.TextBox(
@@ -76,7 +62,7 @@ mybar = [Screen
                         background = bk,
                         foreground = bk2,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
                                 
                 widget.CurrentLayout(
@@ -93,7 +79,7 @@ mybar = [Screen
                         background = bk2,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
 
                 widget.WindowCount(
@@ -104,7 +90,7 @@ mybar = [Screen
                         font = widget_font,
                         fontsize = 19,
                         mouse_callbacks = {'Button1':lazy.layout.next()}
-                                ),                    
+                        ),                    
                         
                 widget.TextBox(
                         text = '',
@@ -112,7 +98,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk2,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
 
                 widget.TextBox(
@@ -121,7 +107,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
 
                 widget.TextBox(
@@ -130,12 +116,24 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
 
-                        widget.Spacer(
-                                background = trn,
-                                ),
+                # NumLockIndicator(
+                #         font = widget_font,
+                #         fontsize = 19,
+                #         # max_chars = 14,
+                #         padding = 5,
+                #         # prefix = 100
+                #         width = 200,
+                #         foreground = fr,
+                #         background =  bk
+                # ),
+
+
+                widget.Spacer(
+                        background = trn,
+                        ),
 
                 widget.TextBox(
                         text = '',
@@ -143,7 +141,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
 
                 widget.TextBox(
@@ -152,7 +150,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
 
                 widget.TextBox(
@@ -161,7 +159,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk2,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),                
                         
                 widget.WidgetBox(
@@ -178,7 +176,7 @@ mybar = [Screen
                                         background = bk2,
                                         foreground = bk,
                                         padding = 0,
-                                        fontsize = 22
+                                        fontsize = 30
                                         ),
                                 widget.Net(
                                         format = '« {down} » {up}   ',
@@ -197,7 +195,7 @@ mybar = [Screen
                                         background = bk2,
                                         foreground = bk,
                                         padding = 0,
-                                        fontsize = 25
+                                        fontsize = 30
                                         ),
                                 widget.Memory(
                                         fmt = "{}",
@@ -216,7 +214,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk2,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
 
                 widget.TextBox(
@@ -225,7 +223,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 22
+                        fontsize = 30
                         ),
 
                 widget.Clock(
@@ -242,7 +240,7 @@ mybar = [Screen
                         background = bk2,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 25
+                        fontsize = 30
                         ),
 
                 widget.TextBox(
@@ -251,27 +249,8 @@ mybar = [Screen
                         background = bk2,
                         foreground = fr,
                         padding = 0,
-                        fontsize = 22
-                        ),
-
-                # widget.PulseVolume(
-                #     font = widget_font,
-                #     fontsize = 18,
-                #     background = bk,
-                #     foreground = fr,
-                #     fmt = '{}'
-                
-                # ),
-
-                # widget.TextBox(
-                #         text = '',
-                #         font = widget_font_symbols,
-                #         background = bk,
-                #         foreground = fr,
-                #         padding = 0,
-                #         fontsize = 22
-                #         ),
-                
+                        fontsize = 30
+                        ),                
 
                 BatteryWidget(
                         font=widget_font,
@@ -287,9 +266,27 @@ mybar = [Screen
                         background = bk,
                         foreground = fr,
                         padding = 0,
-                        fontsize = 25
+                        fontsize = 30
                         ),
-                 
+
+                xwidget.Bluetooth(
+                        background = bk,
+                        foreground = fr,
+                        default_text = '󰂯 ',
+                        fontsize = 18,
+                        device_battery_format = ' ({battery}%)',
+                        device_format = 'Device: {name}{battery_level} [{symbol}]',
+                        highlight_colour = fr,
+                        menu_background = bk,
+                        menu_font = widget_font,
+                        menu_fontsize = 15,
+                        menu_offset_x = -10,
+                        menu_offset_y = 0,
+                        menu_width = 300,
+                        mouse_callbacks = {'Button1': lazy.spawn('blueman-manager'), 'Button2': lazy.spawn('blueman-adapters')},
+                        # opacity = 0.9,
+                        # scroll = True,
+                ), 
                                                 
                 ],
                 background=trn, size=26, margin=[10, 85, 0, 10],
@@ -298,7 +295,7 @@ mybar = [Screen
 ]
 mygroup = [
     Group('1', label="", matches = [Match(wm_class = vriable['browser'])],layout='bsp'),
-    Group('2', label="󰘐", matches = [Match(wm_class = vriable["vscode"])],layout='max'),
+    Group('2', label="", matches = [Match(wm_class = vriable["vscode"])],layout='max'),
     Group('3', label="", layout='bsp'), 
     Group('4', label="",matches = [Match(wm_class = vriable['file_manager'])], layout='bsp'),
     Group('5', label="󰊠", matches = [Match(wm_class = "discord"), Match(wm_class="TelegramDesktop")], layout='bsp'),

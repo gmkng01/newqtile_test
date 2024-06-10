@@ -5,7 +5,7 @@ picom --no-fading-openclose &
 
 # volumeicon &
 nm-applet &
-blueman-applet &
+# blueman-applet &
 # cbatticon &
 volctl &
 dunstify &

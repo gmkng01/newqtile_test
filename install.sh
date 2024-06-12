@@ -20,7 +20,6 @@ programs=(
     "blueman"
     "bluez"
     "bluez-utils"
-    "dunst"
     "nitrogen"
     "pulseaudio"
     "pavucontrol"
@@ -40,11 +39,12 @@ programs=(
     "gvfs-mtp"
     "gvfs-gphoto2"
     "telegram-desktop"
-	"trayer"
-	"lxappearance"
+    "trayer"
+    "lxappearance"
     "lightdm-slick-greeter"
     "xfce4-screenshooter"
     "upower"
+    "emacs"
 )
 
 # Update the package database and upgrade the system
@@ -126,5 +126,9 @@ sudo systemctl start bluetooth
 # Copy lightdm config
 echo "Copying lightdm configration to /etc/"
 sudo cp -rT lightdm /etc/lightdm
+
+# Copy Grub theme config
+echo "Copying Grub themes configration to /boot/"
+sudo cp -rT grub /boot/
 
 echo "Installation complete!"

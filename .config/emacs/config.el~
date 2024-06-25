@@ -5,7 +5,7 @@
 (package-initialize)
 (unless package-archive-contents
 (package-refresh-contents))
-;; just to check things are working or  not
+
 (unless (package-installed-p 'use-package)
    (package-install 'use-package))
 

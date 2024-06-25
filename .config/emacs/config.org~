@@ -41,7 +41,7 @@
   - [[#commenting][Commenting]]
 
 * IMPORTANT PROGRAMS TO LOAD FIRST
-# Just to check things are working correctly 
+
 ** Package Manager
 #+begin_src emacs-lisp
   (require 'package)

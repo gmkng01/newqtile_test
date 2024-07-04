@@ -1,0 +1,4 @@
+;;;; -*- mode: lisp-data -*-
+(
+ (:id "sha1:4158b124e1e8d2d100f3297176fcf240ba85542a" :fingerprints ("sha1:45:06:d4:02:86:3e:c6:8d:1d:c6:71:fe:f1:df:e6:18:73:be:85:43") :host "melpa.milkbox.net:443" :conditions (:no-host-match :verify-cert))
+)

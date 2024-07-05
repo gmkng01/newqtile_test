@@ -21,7 +21,7 @@ widget_font_symbols = 'JetBrainsMono Nerd Font Mono Italic'
 va = {
     "browser" :                 "firefox",
     "trml":                     "terminator",
-    "vscode":                   "emacs",
+    "code":                   "emacsclient -c -a 'emacs'",
     "rofi_menu":                "rofi -show drun -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
     "rofi_windows":             "rofi -show window -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
     "rofi_file":                "rofi -show filebrowser -theme ~/.config/rofi/launchers/type-1/style-7.rasi",

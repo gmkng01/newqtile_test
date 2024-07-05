@@ -8,8 +8,8 @@ nm-applet &
 # blueman-applet &
 # cbatticon &
 volctl &
-# dunstify &
+dunstify &
 nitrogen --restore &
 lxsession &
-xmodmap ~/.Xmodmap &
-emacs --daemon &
+
+

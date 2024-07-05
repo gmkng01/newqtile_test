@@ -289,13 +289,13 @@ mybar = [Screen
                 ), 
                                                 
                 ],
-                background=trn, size=26, margin=[0, 85, 0, 0],
+                background=trn, size=26, margin=[10, 85, 0, 10],
         )
         )
 ]
 mygroup = [
     Group('1', label="", matches = [Match(wm_class = vriable['browser'])],layout='bsp'),
-    Group('2', label="", matches = [Match(wm_class = vriable["code"])],layout='max'),
+    Group('2', label="", matches = [Match(wm_class = vriable["vscode"])],layout='max'),
     Group('3', label="", layout='bsp'), 
     Group('4', label="",matches = [Match(wm_class = vriable['file_manager'])], layout='bsp'),
     Group('5', label="󰊠", matches = [Match(wm_class = "discord"), Match(wm_class="TelegramDesktop")], layout='bsp'),

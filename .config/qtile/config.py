@@ -17,13 +17,13 @@ layouts = [
        border_width = 0,
        fullscreen_border_width = 0,
        max_border_width = 0,
-       margin =  [10,10,10,10],
+       margin =  [10,0,0,0],
     ),
     layout.Max(
        border_width = 0,
        fullscreen_border_width = 0,
        max_border_width = 0,
-       margin =  [10, 10, 10, 10],
+       margin =  [10, 0, 0, 0],
     ),
     layout.Floating(        
        border_width = 0,
@@ -59,6 +59,6 @@ wmname = "Saitama"
 def autostart():
     home = os.path.expanduser('~')
     Popen([home + '/.config/qtile/scripts/autostart.sh'])
-    tr = f'trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top'    
+    tr = f'trayer --transparent true --width 5 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 0 --distance 0 --distancefrom top'    
     Popen(tr, shell=True)
     Popen([home + '/.config/qtile/scripts/battery_low.sh'])

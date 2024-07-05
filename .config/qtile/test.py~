@@ -101,7 +101,3 @@
 #     def poll(self):
 #         """Poll content for the text box."""
 #         return self.get_numlock_status()
-
-import math
-
-print("hello word")

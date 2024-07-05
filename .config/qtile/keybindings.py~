@@ -43,7 +43,7 @@ mykeys = [
         Key(["mod1"], "t", lazy.spawn("telegram-desktop"), 
             desc='Telegram'),
 
-        Key(["mod1"], "c", lazy.spawn(vriable['code']), 
+        Key(["mod1"], "c", lazy.spawn(vriable['vscode']), 
             desc='VS vscodium'),
 
         Key(["mod1"], "n", lazy.spawn(vriable['file_manager']), 

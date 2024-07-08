@@ -133,4 +133,9 @@ sudo cp -rT lightdm /etc/lightdm
 echo "Copying Grub themes configration to /boot/"
 sudo cp -rT grub /boot/grub/
 
+# Configration for Abhishek Mishra only
+git config --global user.name "Abhishek Mishra"
+git config --global user.email gmkng1@gmail.com
+
 echo "Installation complete!"
+

@@ -137,5 +137,7 @@ sudo cp -rT grub /boot/grub/
 git config --global user.name "Abhishek Mishra"
 git config --global user.email gmkng1@gmail.com
 
+mkdir -p  ~/Pictures/Screenshots
+
 echo "Installation complete!"
 

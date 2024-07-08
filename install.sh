@@ -46,6 +46,7 @@ programs=(
     "upower"
     "sxiv"
     "mpv"
+    "grub-customizer"
 )
 
 # Update the package database and upgrade the system
@@ -130,6 +131,6 @@ sudo cp -rT lightdm /etc/lightdm
 
 # Copy Grub theme config
 echo "Copying Grub themes configration to /boot/"
-sudo cp -rT grub /boot/
+sudo cp -rT grub /boot/grub/
 
 echo "Installation complete!"

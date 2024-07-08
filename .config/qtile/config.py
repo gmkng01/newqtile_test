@@ -1,11 +1,12 @@
 import os
 from func_var import bk
-
 from subprocess import Popen
 from MyBars import mybar, mygroup
 from libqtile import layout, hook
 from libqtile.config import Match
+from libqtile.layout import Floating
 from keybindings import mykeys, mymouse
+
 
 screens =   mybar
 keys =      mykeys
@@ -14,28 +15,35 @@ groups =    mygroup
 
 layouts = [
     layout.Bsp(
-       border_width = 0,
+       border_width = 5,
        fullscreen_border_width = 0,
        max_border_width = 0,
        margin =  [10,0,0,0],
     ),
     layout.Max(
-       border_width = 0,
+       border_width = 5,
        fullscreen_border_width = 0,
        max_border_width = 0,
        margin =  [10, 0, 0, 0],
     ),
     layout.Floating(        
-       border_width = 0,
+       border_width = 5,
        fullscreen_border_width = 0,
        max_border_width = 0,
        margin =  [0, 0, 0, 0],
-       float_rules=[
-        Match(wm_class='blueman-manager'),
-        Match(wm_class='pavucontrol')
-    ],
     )
 ]
+
+floating_layout = Floating(
+    float_rules=[
+        *Floating.default_float_rules,
+        Match(wm_class='blueman-manager'),     # Gimp image editor
+        Match(wm_class='pavucontrol'),      # VLC media player
+      #   Match(title='Calculator'),  # Example: Calculator window
+    ]
+)
+
+layouts.append(floating_layout)
 
 dgroups_key_binder = None
 dgroups_app_rules = []  

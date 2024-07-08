@@ -294,12 +294,12 @@ mybar = [Screen
         )
 ]
 mygroup = [
-    Group('1', label="", matches = [Match(wm_class = vriable['browser'])],layout='bsp'),
-    Group('2', label="", matches = [Match(wm_class = vriable["code"])],layout='max'),
-    Group('3', label="", layout='bsp'), 
-    Group('4', label="",matches = [Match(wm_class = vriable['file_manager'])], layout='bsp'),
-    Group('5', label="󰊠", matches = [Match(wm_class = "discord"), Match(wm_class="TelegramDesktop")], layout='bsp'),
-    Group('6', label="", layout='bsp'),
-    Group('7', label="", layout='bsp'),
-    Group('8', label="", layout='bsp'),
+    Group('1', label="", matches = [Match(wm_class = vriable['browser'])]),
+    Group('2', label="", matches = [Match(wm_class = vriable["code"])]),
+    Group('3', label=""), 
+    Group('4', label="",matches = [Match(wm_class = vriable['file_manager'])]),
+    Group('5', label="󰊠", matches = [Match(wm_class = "discord"), Match(wm_class="TelegramDesktop")]),
+    Group('6', label=""),
+    Group('7', label=""),
+    Group('8', label=""),
     ]

@@ -3,7 +3,7 @@ import Color_picker as cp
 
 home = os.path.expanduser('~')
 
-co = cp.wall_color
+co = colors.dark_night
 fix = colors.changable
 
 bk = co['bk']
@@ -16,7 +16,7 @@ trn = fix['trn']
 urgent = fix['dark_red']
 
 widget_font = 'NFS font'
-widget_font_symbols = 'JetBrainsMono Nerd Font Mono Italic'
+widget_font_symbols = ' Italic'
 
 va = {
     "browser" :                 "firefox",

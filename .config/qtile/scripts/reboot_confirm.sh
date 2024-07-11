@@ -18,7 +18,7 @@ confirm_cmd() {
 		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'Reboot  ?' \
-		-theme ${dir}/${theme}.rasi
+		# -theme ${dir}/${theme}.rasi
 }
 
 # Ask for confirmation

@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 
 # Current Theme
-dir="$HOME/.config/rofi/powermenu/type-1"
-theme='style-3'
+# dir="$HOME/.config/rofi/powermenu/type-1"
+theme='/home/abhi/.config/rofi/theme'
 
 
-yes='  Yes'
+yes='✓ Yes'
 no='󰛉  No'
 
 # Confirmation CMD
 confirm_cmd() {
-	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 250px;}' \
-		-theme-str 'mainbox {children: [ "message", "listview" ];}' \
+	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 210px;}' \
+		-theme-str 'mainbox {children: [ "message", "listview" ]; font: "NFS Font Regular 13";}' \
 		-theme-str 'listview {columns: 2; lines: 1;}' \
 		-theme-str 'element-text {horizontal-align: 0.5;}' \
 		-theme-str 'textbox {horizontal-align: 0.5;}' \
 		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'Shutdown  ?' \
-		-theme ${dir}/${theme}.rasi
+		-theme ${theme}.rasi
 }
 
 # Ask for confirmation

@@ -1,6 +1,7 @@
 from colorthief import ColorThief
-import colorsys
+# import colorsys
 import re, os
+import json
 
 home = os.path.expanduser('~')
 
@@ -34,8 +35,6 @@ wall_color = {
     'fr2':              f"#{palette[3][0]:02X}{palette[3][1]:02X}{palette[3][2]:02X}",
     'gr':               f"#{palette[3][0]:02X}{palette[3][1]:02X}{palette[3][2]:02X}"
 }
-
-
 
 
 # print("Color 1:", color1)

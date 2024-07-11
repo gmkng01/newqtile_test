@@ -70,3 +70,6 @@ def autostart():
     tr = f'trayer --transparent true --width 5 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 0 --distance 0 --distancefrom top'    
     Popen(tr, shell=True)
     Popen([home + '/.config/qtile/scripts/battery_low.sh'])
+    # Popen([home + '/.config/rofi/color_changer.sh'])
+
+

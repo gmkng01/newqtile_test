@@ -1,9 +1,10 @@
 import colors, os
 import Color_picker as cp
+import json
 
 home = os.path.expanduser('~')
 
-co = colors.dark_night
+co = colors.dark_sky2
 fix = colors.changable
 
 bk = co['bk']
@@ -16,15 +17,66 @@ trn = fix['trn']
 urgent = fix['dark_red']
 
 widget_font = 'NFS font'
-widget_font_symbols = ' Italic'
+widget_font_symbols = 'JetBrainsMono Nerd Font Italic'
+
+# for_rofi_color = {
+#     'bk': bk,
+#     'bk2': bk2,
+#     'fr': fr,
+#     'fr2': fr2,
+#     'gr': gr
+# }
+
+# # Save colors to a JSON file
+# home = os.path.expanduser('~')
+# with open(f"{home}/.config/rofi/colors.json", 'w') as f:
+#     json.dump(for_rofi_color, f)
+
+
+
+# Template for the Rofi config file
+rasi_template = """
+/* Rofi Color Theme */
+* {{
+    bg: {bk};
+    fg: {fr};
+    bga: {bk2};
+    fga: {fr2};
+    gr: {gr};
+}}
+"""
+
+# Format the template with colors from the colors module
+rasi_content = rasi_template.format(
+   bk=bk,
+   fr=fr,
+   bk2=bk2,
+   fr2=fr2,
+   gr=gr
+)
+
+# Determine the path to the config.rasi file
+home = os.path.expanduser('~')
+config_rasi_path = os.path.join(home, '.config', 'rofi', 'color.rasi')
+
+# Ensure the directory exists
+os.makedirs(os.path.dirname(config_rasi_path), exist_ok=True)
+
+# Write the formatted content to the config.rasi file
+with open(config_rasi_path, 'w') as f:
+   f.write(rasi_content)
+
 
 va = {
     "browser" :                 "firefox",
     "trml":                     "terminator",
     "code":                     "code",
-    "rofi_menu":                "rofi -show drun -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
-    "rofi_windows":             "rofi -show window -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
-    "rofi_file":                "rofi -show filebrowser -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
+    # "rofi_menu":                "rofi -show drun -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
+    # "rofi_windows":             "rofi -show window -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
+    # "rofi_file":                "rofi -show filebrowser -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
+    "rofi_menu":                "rofi -show drun",
+    "rofi_windows":             "rofi -show window",
+    "rofi_file":                "rofi -show filebrowser",
     "wall":                     "sxiv -t ~/Pictures/wall",
     "file_manager":             "pcmanfm",
     "bluetooth":                "blueman-manager",

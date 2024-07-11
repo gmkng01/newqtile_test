@@ -18,17 +18,11 @@ configuration {
 @import "~/.config/rofi/color.rasi"
 
 * {
-    // bg:                         @bg;
-    // bg-alt:                     @bga;
-    // fg:                         @fg;
-    // fg-alt:                     @fga;
-    // gr:                         @gr;
-
     background-color:           @bg;
 }
 
 window{
-    width:                      35%;
+    width:                      20%;
 }
 
 element{

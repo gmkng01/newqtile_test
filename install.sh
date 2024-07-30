@@ -47,6 +47,10 @@ programs=(
     "sxiv"
     "mpv"
     "grub-customizer"
+    "gnome-disk-utility"
+    "telegram-desktop"
+    "kdeconnect"
+    "volctl"
 )
 
 # Update the package database and upgrade the system
@@ -138,6 +142,7 @@ git config --global user.name "Abhishek Mishra"
 git config --global user.email gmkng1@gmail.com
 
 mkdir -p  ~/Pictures/Screenshots
+# mkdir -p  ~/Pictures/
 
 echo "Installation complete!"
 

@@ -1,14 +1,21 @@
+-- xmonad.hs
+-- xmonad example config file.
+--
+-- A template showing all available configuration hooks,
+-- and how to override the defaults in your own xmonad.hs conf file.
+--
+-- Normally, you'd only override those defaults you care about.
+--
+
 import XMonad
 import Data.Monoid
 import System.Exit
 import Graphics.X11.ExtraTypes.XF86
-import XMonad.Util.Run(spawnPipe)
-import qualified XMonad.StackSet as W
-import qualified Data.Map        as M
 import XMonad.Hooks.DynamicLog
 
 
-
+import qualified XMonad.StackSet as W
+import qualified Data.Map        as M
 
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
@@ -25,14 +32,13 @@ myClickJustFocuses = False
 
 -- Width of the window border in pixels.
 --
-myBorderWidth   = 0 
+myBorderWidth   = 1
 
 -- modMask lets you specify which modkey you want to use. The default
 -- is mod1Mask ("left alt").  You may also consider using mod3Mask
 -- ("right alt"), which does not conflict with emacs keybindings. The
 -- "windows key" is usually mod4Mask.
 --
--- myModMask       = mod1Mask
 myModMask       = mod4Mask
 
 -- The default number of workspaces (virtual screens) and their names.
@@ -57,27 +63,21 @@ myFocusedBorderColor = "#ff0000"
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- launch a terminal
-    [
-      -- ((modm,            xK_Return), spawn $ XMonad.terminal conf)
-      ((modm,              xK_Return), spawn "terminator")
-      
-      -- Launch firefox
-    ,  ((mod1Mask,          xK_f     ), spawn "firefox")
+    [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
     
-    -- Code Editor
-    ,  ((mod1Mask,          xK_c     ), spawn "code")
-    
-    -- File Manager
-    ,  ((mod1Mask,          xK_n     ), spawn "pcmanfm")
-      
+    -- volume keys
+    , ((0, xF86XK_AudioMute), spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")
+    , ((0, xF86XK_AudioLowerVolume), spawn "pactl set-sink-volume @DEFAULT_SINK@ -10%")
+    , ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume @DEFAULT_SINK@ +10%")
+
     -- launch dmenu
-    , ((modm .|. shiftMask, xK_Return), spawn "rofi -show drun -theme ~/.config/rofi/launchers/type-1/style-7.rasi")
+    , ((modm,               xK_p     ), spawn "dmenu_run")
 
     -- launch gmrun
-    -- , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
+    , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
 
     -- close focused window
-    , ((mod1Mask,           xK_q     ), kill)
+    , ((modm .|. shiftMask, xK_c     ), kill)
 
      -- Rotate through the available layout algorithms
     , ((modm,               xK_space ), sendMessage NextLayout)
@@ -101,7 +101,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_m     ), windows W.focusMaster  )
 
     -- Swap the focused window and the master window
-    -- , ((modm,               xK_q), windows W.swapMaster)
+    , ((modm,               xK_Return), windows W.swapMaster)
 
     -- Swap the focused window with the next window
     , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  )
@@ -131,28 +131,15 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- , ((modm              , xK_b     ), sendMessage ToggleStruts)
 
     -- Quit xmonad
-    , ((modm              ,xK_q     ), io (exitWith ExitSuccess))
+    , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
 
     -- Restart xmonad
-    , ((modm              , xK_r     ), spawn "xmonad --recompile; xmonad --restart")
-    , ((modm .|. shiftMask, xK_r     ), spawn "~/.config/xmonad/scripts/reboot_confirm.sh")
-    , ((modm .|. shiftMask, xK_x     ), spawn "~/.config/xmonad/scripts/shutdown_confirm.sh")
+    , ((modm              , xK_q     ), spawn "xmonad --recompile; xmonad --restart")
 
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
     , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
-    
-     -- Volume Keys
-    , ((0, xF86XK_AudioMute), spawn "~/.config/xmonad/scripts/vol.sh mute")
-    , ((0, xF86XK_AudioLowerVolume), spawn "~/.config/xmonad/scripts/vol.sh down")
-    , ((0, xF86XK_AudioRaiseVolume), spawn "~/.config/xmonad/scripts/vol.sh up")
-
-     -- Brightness Keys
-    , ((0, xF86XK_MonBrightnessDown), spawn "~/.config/xmonad/scripts/bright.sh down")
-    , ((0, xF86XK_MonBrightnessUp), spawn "~/.config/xmonad/scripts/bright.sh up")
-
     ]
     ++
-
 
     --
     -- mod-[1..9], Switch to workspace N
@@ -168,7 +155,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- mod-shift-{w,e,r}, Move client to screen 1, 2, or 3
     --
     [((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
-        | (key, sc) <- zip [xK_w, xK_e, xK_t] [0..]
+        | (key, sc) <- zip [xK_w, xK_e, xK_r] [0..]
         , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 
 
@@ -232,7 +219,7 @@ myLayout = tiled ||| Mirror tiled ||| Full
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "blueman"        --> doFloat
+    [ className =? "MPlayer"        --> doFloat
     , className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore ]
@@ -264,14 +251,11 @@ myLogHook = return ()
 -- per-workspace layout choices.
 --
 -- By default, do nothing.
-myStartupHook = do
-  spawn "~/.config/xmonad/scripts/autostart.sh"
-  spawn "~/.config/xmonad/scripts/battery_low.sh"
-
+myStartupHook = return ()
 
 ------------------------------------------------------------------------
 -- Command to launch the bar.
-myBar = "xmobar ~/.config/xmobar/.xmobarrc"
+myBar = "xmobar"
 
 -- Custom PP, configure it as you like. It determines what is being written to the bar.
 myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">" }
@@ -279,15 +263,11 @@ myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">" }
 -- Key binding to toggle the gap for the bar.
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
-
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
--- main = do
---   spawnPipe "xmobar ~/.xmobarrc"
---   xmonad defaults
 main = xmonad =<< statusBar myBar myPP toggleStrutsKey defaults
 
 -- A structure containing your configuration settings, overriding

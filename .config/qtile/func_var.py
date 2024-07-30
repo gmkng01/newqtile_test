@@ -1,10 +1,10 @@
 import colors, os
 import Color_picker as cp
-import json
+# import json
 
 home = os.path.expanduser('~')
 
-co = colors.dark_sky2
+co = cp.wall_color
 fix = colors.changable
 
 bk = co['bk']
@@ -26,7 +26,7 @@ widget_font_symbols = 'JetBrainsMono Nerd Font Italic'
 #     'fr2': fr2,
 #     'gr': gr
 # }
-
+# print(bk[1::])
 # # Save colors to a JSON file
 # home = os.path.expanduser('~')
 # with open(f"{home}/.config/rofi/colors.json", 'w') as f:

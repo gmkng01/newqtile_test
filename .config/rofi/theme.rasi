@@ -9,20 +9,20 @@ configuration {
     // display-dmenu:              " Themes";
 	drun-display-format:        "{icon} {name}";
 	window-format:              "{w} · {c} · {t}";
-    font:                       "JetBrainsMono Nerd Font Regular 13";
-    // font:                       "NFS Font Regular 15";
+    // font:                       "JetBrainsMono Nerd Font Regular 13";
+    font:                       "NFS Font Regular 15";
     icon-theme:                 "Dracula";
 }
 
 
 
 @theme "/dev/null"
-
+@import "~/.config/rofi/color.rasi"
 * {
-    bg:                         #30475E;
-    bg-alt:                     #222831;
-    fg:                         #DDDDDD;
-    fg-alt:                     #F05454;
+    // bg:                         #30475E;
+    // bg-alt:                     #222831;
+    // fg:                         #DDDDDD;
+    // fg-alt:                     #F05454;
 
     background-color:           @bg;
 }
@@ -37,7 +37,7 @@ element{
 }
 
 element selected{
-    text-color:                 @fg-alt;
+    text-color:                 @fga;
 }
 
 element-text{
@@ -51,7 +51,7 @@ element-icon{
 }
 
 entry {
-    background-color:           @bg-alt;
+    background-color:           @bga;
     padding:                    12;
     text-color:                 @fg;
 }
@@ -73,7 +73,7 @@ mainbox {
 
 prompt {
     textbox:                    "themes";
-    background-color:           @bg-alt;
+    background-color:           @bga;
     enabled:                    true;
     padding:                    12 0 0 12;
     text-color:                 @fg;
@@ -82,7 +82,7 @@ prompt {
 
 message{
     // text: "shutdown";
-    background-color: @bg-alt;
+    background-color: @bga;
 }
 
 

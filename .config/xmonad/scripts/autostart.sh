@@ -12,4 +12,4 @@ volctl &
 nitrogen --restore &
 lxsession &
 xmodmap ~/.Xmodmap &
-# emacs --daemon &
+emacs --daemon &

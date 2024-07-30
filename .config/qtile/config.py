@@ -1,5 +1,5 @@
 import os
-from func_var import bk
+from func_var import bk, bk2, fr, fr2
 from subprocess import Popen
 from MyBars import mybar, mygroup
 from libqtile import layout, hook
@@ -16,12 +16,15 @@ groups =    mygroup
 layouts = [
     layout.Bsp(
        border_width = 5,
+       border_normal = f"#66{bk2[1::]}",
        fullscreen_border_width = 0,
        max_border_width = 0,
        margin =  [10,0,0,0],
     ),
     layout.Max(
        border_width = 5,
+    #    border_focus = f"#00{fr2[1::]}",
+    #    border_focus = "#ffffff",
        fullscreen_border_width = 0,
        max_border_width = 0,
        margin =  [10, 0, 0, 0],
@@ -37,8 +40,9 @@ layouts = [
 floating_layout = Floating(
     float_rules=[
         *Floating.default_float_rules,
-        Match(wm_class='blueman-manager'),     # Gimp image editor
-        Match(wm_class='pavucontrol'),      # VLC media player
+        Match(wm_class='blueman-manager'),     # Blueman bluetooth manager
+        Match(wm_class='pavucontrol'),      # Pavucontrol
+        Match(wm_class='kdeconnect-app')
       #   Match(title='Calculator'),  # Example: Calculator window
     ]
 )
@@ -61,7 +65,7 @@ auto_minimize = True
 # When using the Wayland backend, this can be used to configure input devices.
 wl_input_rules = None
 
-wmname = "Saitama"
+wmname = "LG3D"
 
 @hook.subscribe.startup_once
 def autostart():

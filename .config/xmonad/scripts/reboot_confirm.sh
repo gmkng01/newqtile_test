@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Current Theme
-theme="$HOME/.config/rofi/theme.rasi"
-
+dir="$HOME/.config/rofi/powermenu/type-1"
+theme='style-3'
 
 
 yes='  Yes'
@@ -10,7 +10,7 @@ no='󰛉  No'
 
 # Confirmation CMD
 confirm_cmd() {
-	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 210px;}' \
+	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 250px;}' \
 		-theme-str 'mainbox {children: [ "message", "listview" ];}' \
 		-theme-str 'listview {columns: 2; lines: 1;}' \
 		-theme-str 'element-text {horizontal-align: 0.5;}' \
@@ -18,7 +18,7 @@ confirm_cmd() {
 		-dmenu \
 		-p 'Confirmation' \
 		-mesg 'Reboot  ?' \
-		-theme ${theme}
+		-theme ${dir}/${theme}.rasi
 }
 
 # Ask for confirmation

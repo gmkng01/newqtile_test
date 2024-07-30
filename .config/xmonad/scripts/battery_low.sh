@@ -29,8 +29,8 @@
 #                                   *** Second Code ***
 
 # Current Theme
-dir="$HOME/.config/rofi/theme.rasi"
-# theme='style-3-batt'
+dir="$HOME/.config/rofi/powermenu/type-1"
+theme='style-3-batt'
 
 # Message to display
 message="
@@ -44,7 +44,7 @@ show_message() {
         -theme-str 'mainbox {children: ["textbox"];}' \
         -theme-str 'textbox {horizontal-align: 0.5; vertical-align: 0.5; text-color: #E06C75FF;}' \
         -e "$message" \
-        -theme ${dir}
+        -theme ${dir}/${theme}.rasi
 }
 
 # Function to check battery status

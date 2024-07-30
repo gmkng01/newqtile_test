@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Current Theme
-theme="$HOME/.config/rofi/theme.rasi"
-
+dir="$HOME/.config/rofi/powermenu/type-1"
+theme='style-3'
 
 
 yes='  Yes'
@@ -10,15 +10,15 @@ no='󰛉  No'
 
 # Confirmation CMD
 confirm_cmd() {
-	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 210px;}' \
+	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 250px;}' \
 		-theme-str 'mainbox {children: [ "message", "listview" ];}' \
 		-theme-str 'listview {columns: 2; lines: 1;}' \
 		-theme-str 'element-text {horizontal-align: 0.5;}' \
 		-theme-str 'textbox {horizontal-align: 0.5;}' \
 		-dmenu \
 		-p 'Confirmation' \
-		-mesg 'Reboot  ?' \
-		-theme ${theme}
+		-mesg 'Shutdown  ?' \
+		-theme ${dir}/${theme}.rasi
 }
 
 # Ask for confirmation
@@ -28,13 +28,13 @@ confirm_exit() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$reboot" | rofi_cmd
+	echo -e "$shutdown" | rofi_cmd
 }
 
 run_cmd() {
     selected="$(confirm_exit)"
     if [[ "$selected" == "$yes" ]]; then
-        systemctl reboot
+        systemctl poweroff
     else
         exit 0
     fi
@@ -43,7 +43,7 @@ run_cmd() {
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
-    $reboot)
-        run_cmd --reboot
+    $shutdown)
+        run_cmd --shutdown
 esac
 

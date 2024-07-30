@@ -119,6 +119,10 @@ cp -rT .config ~/.config/
 echo "Copying .bashrc to the home directory..."
 cp -T .bashrc ~/.bashrc
 
+# Copy .Xmodmap to the home directory
+echo "Copying .Xmodmap to the home directory..."
+cp -T .bashrc ~/.Xmodmap
+
 # Copy 50-libinput.conf to /etc/X11/xorg.conf.d/
 echo "Copying 50-libinput.conf and 10-serverflags.conf to /etc/X11/xorg.conf.d/..."
 sudo cp 50-libinput.conf /etc/X11/xorg.conf.d/

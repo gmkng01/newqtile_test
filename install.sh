@@ -1,7 +1,10 @@
 #!/bin/bash
 
+echo "Updating mirrors"
+cd ~/newqtile_test/mirror
 # Update mirror list
-# ./mirror.sh
+./mirror.sh
+cd
 
 # List of programs to install
 programs=(

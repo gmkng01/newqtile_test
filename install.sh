@@ -123,6 +123,13 @@ cp -T .bashrc ~/.bashrc
 echo "Copying .Xmodmap to the home directory..."
 cp -T .bashrc ~/.Xmodmap
 
+# Adding Xmodmap file to xinitrc so it can run automaticly
+echo "Adding Xmodmap file to xinitr"
+TEXT_FILE="/etc/X11/xinit/xinitrc"
+LINE_TO_ADD="xmodmap ~/.Xmodmap"
+echo "$LINE_TO_ADD" >> "$TEXT_FILE"
+echo "Line added to $TEXT_FILE"
+
 # Copy 50-libinput.conf to /etc/X11/xorg.conf.d/
 echo "Copying 50-libinput.conf and 10-serverflags.conf to /etc/X11/xorg.conf.d/..."
 sudo cp 50-libinput.conf /etc/X11/xorg.conf.d/

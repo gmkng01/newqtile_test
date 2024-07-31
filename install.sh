@@ -36,7 +36,7 @@ programs=(
     "unzip"
     "unrar"
     "p7zip"
-    "nemo"
+    # "nemo"
     "python-dbus-next"
     "mtpfs"
     "gvfs-mtp"
@@ -54,6 +54,7 @@ programs=(
     "telegram-desktop"
     "kdeconnect"
     "volctl"
+	"pcmanfm"
 )
 
 # Update the package database and upgrade the system
@@ -98,6 +99,7 @@ aur_programs=(
     "python-colorthief"
     "volctl"
     "qtile-extras"
+    "nomacs"
 )
 
 # Install each AUR program via yay
@@ -130,7 +132,7 @@ cp -T .bashrc ~/.Xmodmap
 echo "Adding Xmodmap file to xinitr"
 TEXT_FILE="/etc/X11/xinit/xinitrc"
 LINE_TO_ADD="xmodmap ~/.Xmodmap"
-echo "$LINE_TO_ADD" >> "$TEXT_FILE"
+sudo echo "$LINE_TO_ADD" >> "$TEXT_FILE"
 echo "Line added to $TEXT_FILE"
 
 # Copy 50-libinput.conf to /etc/X11/xorg.conf.d/

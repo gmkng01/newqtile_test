@@ -1,10 +1,10 @@
 import colors, os
 import Color_picker as cp
-# import json
+import subprocess
 
 home = os.path.expanduser('~')
 
-co = cp.wall_color
+co = colors.vintage
 fix = colors.changable
 
 bk = co['bk']
@@ -19,18 +19,8 @@ urgent = fix['dark_red']
 widget_font = 'NFS font'
 widget_font_symbols = 'JetBrainsMono Nerd Font Italic'
 
-# for_rofi_color = {
-#     'bk': bk,
-#     'bk2': bk2,
-#     'fr': fr,
-#     'fr2': fr2,
-#     'gr': gr
-# }
-# print(bk[1::])
-# # Save colors to a JSON file
-# home = os.path.expanduser('~')
-# with open(f"{home}/.config/rofi/colors.json", 'w') as f:
-#     json.dump(for_rofi_color, f)
+
+
 
 
 
@@ -70,7 +60,7 @@ with open(config_rasi_path, 'w') as f:
 va = {
     "browser" :                 "firefox",
     "trml":                     "terminator",
-    "code":                     "code",
+    "code":                     f"{home}/.config/qtile/scripts/VScode_transparent.sh",
     # "rofi_menu":                "rofi -show drun -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
     # "rofi_windows":             "rofi -show window -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
     # "rofi_file":                "rofi -show filebrowser -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
@@ -94,7 +84,9 @@ va = {
     "screenshot_window":        'sh -c "xfce4-screenshooter -w --clipboard --save ~/Pictures/Screenshots/Screenshot_$(date +\'%Y-%m-%d_%H:%M:%S\').png"',
     "screenshot_region":        'sh -c "xfce4-screenshooter -r --clipboard --save ~/Pictures/Screenshots/Screenshot_$(date +\'%Y-%m-%d_%H:%M:%S\').png"',
     "screenshot_gui":           "xfce4-screenshooter",
-    "trayer":                   f"killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top"
+    "trayer":                   f"killall trayer && trayer --transparent true --width 4 --edge top --align right --alpha 0 --tint 0x{bk[1::]} --margin 10 --distance 10 --distancefrom top",
+    "lock_screen":              f"{home}/.config/i3lock/lock.sh"
+    # "lock_screen":              "betterlockscreen -l"
     }
 
 vriable = va

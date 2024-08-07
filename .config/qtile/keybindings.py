@@ -1,5 +1,5 @@
 import os
-from func_var import vriable,bk
+from func_var import vriable, bk
 from MyBars import mygroup
 from subprocess import Popen
 from libqtile.lazy import lazy
@@ -54,7 +54,6 @@ mykeys = [
        
         
         ### System controls
-
         Key(["mod4"], "Tab", lazy.next_layout(), 
             desc='Toggle through layouts'),
 
@@ -64,7 +63,7 @@ mykeys = [
         Key(["mod4"], "r", lazy.reload_config(), 
             desc='Restart Qtile'),
 
-        Key(["mod4"], "l", lazy.spawn("betterlockscreen -l"),
+        Key(["mod4"], "l", lazy.spawn(vriable["lock_screen"]),
             desc='Screen Lock'),
 
         Key(["mod4", "shift"], "q", lazy.shutdown(), 
@@ -84,9 +83,6 @@ mykeys = [
         Key(["mod4", "shift"], "t",lazy.spawn(vriable["theme_changer"]),
             desc="Cycle through colors"),
 
-
-        # sxiv -t ~/Pictures/wall
-
         ### Window controls
         Key(["mod4", "shift"], "o", 
             lazy.window.toggle_maximize()
@@ -94,6 +90,13 @@ mykeys = [
         Key(["mod4", "shift"], "i", 
             lazy.window.toggle_minimize()
             ),
+
+        # Key(["mod4", "shift"], "o", lazy.function(minimize_focused_window)),
+    
+        # # Restore minimized windows
+        # Key(["mod4", "shift"], "i", lazy.function(restore_minimized_window)),
+
+
         Key(["mod4"], "j",
             lazy.layout.down(),
             desc='Move focus down in current stack pane'

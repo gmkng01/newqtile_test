@@ -1,0 +1,20 @@
+2024-08-22 09:59:39.542 [info] (Client) Pylance async client (2024.8.1) started with python extension (2024.12.3)
+2024-08-22 09:59:41.570 [info] [Info  - 9:59:41 AM] (2246) Pylance language server 2024.8.1 (pyright version 1.1.373, commit ee424479) starting
+2024-08-22 09:59:41.623 [info] [Info  - 9:59:41 AM] (2246) Server root directory: file:///home/abhi/.vscode/extensions/ms-python.vscode-pylance-2024.8.1/dist
+2024-08-22 09:59:41.623 [info] [Info  - 9:59:41 AM] (2246) Starting service instance "Llama3"
+2024-08-22 09:59:41.641 [info] [Info  - 9:59:41 AM] (2246) Background analysis(1) root directory: file:///home/abhi/.vscode/extensions/ms-python.vscode-pylance-2024.8.1/dist
+2024-08-22 09:59:41.642 [info] [Info  - 9:59:41 AM] (2246) Background analysis(1) started
+2024-08-22 09:59:41.670 [info] [Info  - 9:59:41 AM] (2246) Setting pythonPath for service "Llama3": "/home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python"
+2024-08-22 09:59:41.670 [info] [Info  - 9:59:41 AM] (2246) Setting environmentName for service "Llama3": "3.12.4 (letest_env venv)"
+2024-08-22 09:59:41.671 [info] [Info  - 9:59:41 AM] (2246) No include entries specified; assuming /home/abhi/Documents/ChatBot/Llama3
+2024-08-22 09:59:41.677 [info] [Info  - 9:59:41 AM] (2246) Auto-excluding **/node_modules
+2024-08-22 09:59:41.678 [info] [Info  - 9:59:41 AM] (2246) Auto-excluding **/__pycache__
+2024-08-22 09:59:41.679 [info] [Info  - 9:59:41 AM] (2246) Auto-excluding **/.*
+2024-08-22 09:59:41.839 [info] [Info  - 9:59:41 AM] (2246) Assuming Python version 3.12.4.final.0
+2024-08-22 09:59:41.899 [info] [Info  - 9:59:41 AM] (2246) Auto-excluding /home/abhi/Documents/ChatBot/Llama3/letest_env
+2024-08-22 09:59:41.900 [info] [Info  - 9:59:41 AM] (2246) No source files found.
+2024-08-22 09:59:42.513 [info] [Info  - 9:59:42 AM] (2246) Indexer background runner(2) root directory: file:///home/abhi/.vscode/extensions/ms-python.vscode-pylance-2024.8.1/dist (index)
+2024-08-22 09:59:42.514 [info] [Info  - 9:59:42 AM] (2246) Indexing(2) started
+2024-08-22 09:59:43.219 [info] [Info  - 9:59:43 AM] (2246) scanned(2) 360 files over 1 exec env
+2024-08-22 09:59:43.524 [info] [Info  - 9:59:43 AM] (2246) indexed(2) 286 files over 1 exec env
+2024-08-22 09:59:43.632 [info] [Info  - 9:59:43 AM] (2246) Indexing finished(2).

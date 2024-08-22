@@ -1,0 +1,21 @@
+Visual Studio Code (1.92.2, undefined, desktop)
+Jupyter Extension Version: 2024.7.0.
+Python Extension Version: 2024.12.3.
+Pylance Extension Version: 2024.8.1.
+Platform: linux (x64).
+Workspace folder ~/Documents/ChatBot/Llama3, Home = /home/abhi
+11:10:49.706 [info] Starting Kernel (Python Path: ~/Documents/ChatBot/Llama3/letest_env/bin/python, Venv, 3.12.4) for '~/Documents/ChatBot/Llama3/final_test2.ipynb' (disableUI=true)
+11:10:51.427 [info] Process Execution: ~/Documents/ChatBot/Llama3/letest_env/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+11:10:51.440 [info] Process Execution: ~/Documents/ChatBot/Llama3/letest_env/bin/python -m ipykernel_launcher --f=/home/~/.local/share/jupyter/runtime/kernel-v2-6769bNxeDgr2qhhl.json
+    > cwd: //home/~/Documents/ChatBot/Llama3
+11:10:51.470 [info] Process Execution: ~/Documents/ChatBot/Llama3/letest_env/bin/python -m pip list
+11:10:53.710 [info] Kernel successfully started
+11:10:53.731 [info] Process Execution: ~/Documents/ChatBot/Llama3/letest_env/bin/python /home/~/.vscode/extensions/ms-toolsai.jupyter-2024.7.0-linux-x64/pythonFiles/printJupyterDataDir.py
+11:11:58.754 [info] Dispose Kernel '~/Documents/ChatBot/Llama3/final_test2.ipynb' associated with '~/Documents/ChatBot/Llama3/final_test2.ipynb'
+11:11:58.812 [warn] Failed to delete connection file file:///home/~/.local/share/jupyter/runtime/kernel-v2-6769bNxeDgr2qhhl.json for pid 7235 Canceled (FileSystemError): Canceled
+    at Function.e (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:153:7311)
+    at Object.stat (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:153:3977)
+    at Uc.delete (/home/~/.vscode/extensions/ms-toolsai.jupyter-2024.7.0-linux-x64/dist/extension.node.js:239:15722)
+    at /home/~/.vscode/extensions/ms-toolsai.jupyter-2024.7.0-linux-x64/dist/extension.node.js:303:469 {
+  code: 'Unknown'
+}

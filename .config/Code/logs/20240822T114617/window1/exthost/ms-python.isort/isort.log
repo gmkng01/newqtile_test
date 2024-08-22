@@ -1,0 +1,65 @@
+2024-08-22 11:46:29.721 [info] Name: isort
+2024-08-22 11:46:29.721 [info] Module: isort
+2024-08-22 11:46:29.721 [info] Python extension loading
+2024-08-22 11:46:29.721 [info] Waiting for interpreter from python extension.
+2024-08-22 11:46:29.803 [info] No interpreter found from setting isort.interpreter
+2024-08-22 11:46:29.803 [info] Getting interpreter from ms-python.python extension for workspace /home/abhi/newqtile_test
+2024-08-22 11:46:29.803 [info] Python extension loaded
+2024-08-22 11:46:31.104 [info] Interpreter from ms-python.python extension for /home/abhi/newqtile_test: /usr/bin/python
+2024-08-22 11:46:31.105 [info] No interpreter found from setting isort.interpreter
+2024-08-22 11:46:31.105 [info] Getting interpreter from ms-python.python extension for workspace /home/abhi/newqtile_test
+2024-08-22 11:46:31.342 [info] Interpreter from ms-python.python extension for /home/abhi/newqtile_test: /usr/bin/python
+2024-08-22 11:46:31.433 [info] Server run command: /usr/bin/python /home/abhi/.vscode/extensions/ms-python.isort-2023.10.1/bundled/tool/lsp_server.py
+2024-08-22 11:46:31.436 [info] Server: Start requested.
+2024-08-22 11:46:33.576 [info] CWD Server: /home/abhi/newqtile_test
+2024-08-22 11:46:33.577 [info] sys.path used to run Server:
+   /home/abhi/.vscode/extensions/ms-python.isort-2023.10.1/bundled/libs
+   /home/abhi/.vscode/extensions/ms-python.isort-2023.10.1/bundled/tool
+   /usr/lib/python312.zip
+   /usr/lib/python3.12
+   /usr/lib/python3.12/lib-dynload
+   /usr/lib/python3.12/site-packages
+2024-08-22 11:46:33.578 [info] Settings used to run Server:
+[
+    {
+        "check": false,
+        "cwd": "/home/abhi/newqtile_test",
+        "workspace": "file:///home/abhi/newqtile_test",
+        "args": [],
+        "path": [],
+        "severity": {
+            "W": "Warning",
+            "E": "Hint"
+        },
+        "interpreter": [
+            "/usr/bin/python"
+        ],
+        "importStrategy": "useBundled",
+        "showNotifications": "off"
+    }
+]
+
+2024-08-22 11:46:33.578 [info] Global settings:
+{
+    "check": false,
+    "cwd": "/home/abhi",
+    "workspace": "/home/abhi",
+    "args": [],
+    "path": [],
+    "severity": {
+        "W": "Warning",
+        "E": "Hint"
+    },
+    "interpreter": [],
+    "importStrategy": "useBundled",
+    "showNotifications": "off"
+}
+
+2024-08-22 11:46:33.584 [info] /usr/bin/python -m isort --version-number
+2024-08-22 11:46:33.585 [info] CWD Linter: /home/abhi/newqtile_test
+2024-08-22 11:46:33.596 [info] Version info for isort running for /home/abhi/newqtile_test:
+5.11.5
+
+2024-08-22 11:46:33.596 [info] SUPPORTED isort>=5.10.1
+FOUND isort==5.11.5
+

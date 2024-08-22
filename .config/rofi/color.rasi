@@ -1,9 +1,9 @@
 
 /* Rofi Color Theme */
 * {
-    bg: #292836;
-    fg: #A6718A;
-    bga: #D0CFD6;
-    fga: #56919C;
-    gr: #56919C;
+    bg: #43766C;
+    fg: #F8FAE5;
+    bga: #76453B;
+    fga: #B19470;
+    gr: #F8FAE5;
 }

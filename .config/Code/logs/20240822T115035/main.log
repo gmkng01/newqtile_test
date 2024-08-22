@@ -1,0 +1,6 @@
+2024-08-22 11:50:35.689 [info] update#setState idle
+2024-08-22 11:51:05.696 [info] update#setState checking for updates
+2024-08-22 11:51:05.801 [info] update#setState idle
+2024-08-22 12:19:17.163 [info] Extension host with pid 3210 exited with code: 0, signal: unknown.
+2024-08-22 12:28:22.796 [error] ptyHost terminated unexpectedly with code 15
+2024-08-22 12:28:22.797 [warning] [UtilityProcess type: ptyHost, pid: 34238]: unable to kill the process

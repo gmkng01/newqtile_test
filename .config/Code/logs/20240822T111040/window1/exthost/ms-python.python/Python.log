@@ -1,0 +1,52 @@
+2024-08-22 11:10:46.727 [info] Experiment 'pythonCreateEnvOnPipInstall' is active
+2024-08-22 11:10:46.727 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-08-22 11:10:46.727 [info] Experiment 'pythonSurveyNotification' is active
+2024-08-22 11:10:46.727 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-08-22 11:10:46.727 [info] Experiment 'pythonTestAdapter' is active
+2024-08-22 11:10:46.727 [error] Reading directory to watch failed Error: ENOENT: no such file or directory, scandir '/home/abhi/Documents/ChatBot/Llama3/.pixi/envs'
+    at Object.readdirSync (node:fs:1509:26)
+    at Object.t.readdirSync (node:electron/js2c/node_init:2:11418)
+    at /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/out/client/extension.js:2:586747
+    at /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/out/client/extension.js:2:586938
+    at Array.map (<anonymous>)
+    at d.initWatchers (/home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/out/client/extension.js:2:586656)
+    at d.ensureWatchersReady (/home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/out/client/extension.js:2:543067) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/abhi/Documents/ChatBot/Llama3/.pixi/envs'
+}
+2024-08-22 11:10:46.727 [error] Dir "/home/abhi/Documents/ChatBot/Llama3/.pixi/envs" is not watchable (directory does not exist)
+2024-08-22 11:10:47.507 [info] Default formatter is set to null for workspace /home/abhi/Documents/ChatBot/Llama3
+2024-08-22 11:10:47.566 [info] Python interpreter path: ./letest_env/bin/python
+2024-08-22 11:10:49.363 [info] > pyenv which python
+2024-08-22 11:10:49.363 [info] cwd: .
+2024-08-22 11:10:49.854 [info] > conda info --json
+2024-08-22 11:10:49.864 [info] > pixi --version
+2024-08-22 11:10:49.866 [error] Error: spawn pixi ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:286:19)
+    at onErrorNT (node:internal/child_process:484:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn pixi',
+  path: 'pixi',
+  spawnargs: [ '--version' ]
+}
+2024-08-22 11:10:49.867 [warning] could not find a pixi interpreter for the interpreter at /home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python
+2024-08-22 11:10:49.867 [warning] could not find a pixi interpreter for the interpreter at /home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python
+2024-08-22 11:10:49.997 [warning] could not find a pixi interpreter for the interpreter at /home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python
+2024-08-22 11:10:50.125 [info] > . ./letest_env/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariables.py
+2024-08-22 11:10:50.125 [info] shell: bash
+2024-08-22 11:10:50.135 [info] > . ./letest_env/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariables.py
+2024-08-22 11:10:50.135 [info] shell: bash
+2024-08-22 11:10:52.622 [info] > . ./letest_env/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariables.py
+2024-08-22 11:10:52.622 [info] shell: bash
+2024-08-22 11:10:52.835 [info] > python ~/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariables.py
+2024-08-22 11:10:52.835 [info] shell: bash
+2024-08-22 11:10:53.021 [info] Setting environment variable VIRTUAL_ENV in collection to /home/abhi/Documents/ChatBot/Llama3/letest_env {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:10:53.021 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to (letest_env)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:10:53.021 [info] Prepending environment variable PS1 in collection with (letest_env)  {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2024-08-22 11:10:53.021 [info] Prepending environment variable PATH in collection with /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash:/home/abhi/Documents/ChatBot/Llama3/letest_env/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:10:53.024 [info] Send text to terminal: python /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+2024-08-22 11:10:56.964 [info] Starting Pylance language server.

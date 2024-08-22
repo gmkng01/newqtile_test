@@ -1,0 +1,27 @@
+2024-08-22 11:37:12.885 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2024-08-22 11:37:12.885 [info] Auto Sync is enabled.
+2024-08-22 11:37:12.885 [info] Auto Sync: Suspended until auth token is available.
+2024-08-22 11:37:18.403 [info] Auto Sync: Triggered by Interval
+2024-08-22 11:37:18.403 [info] Sync started.
+2024-08-22 11:37:19.283 [info] Settings: No changes found during synchronizing settings.
+2024-08-22 11:37:19.323 [info] Keybindings: No changes found during synchronizing keybindings.
+2024-08-22 11:37:19.339 [info] Snippets: No changes found during synchronizing snippets.
+2024-08-22 11:37:19.348 [info] Tasks: No changes found during synchronizing tasks.
+2024-08-22 11:37:19.365 [info] GlobalState: No changes found during synchronizing ui state.
+2024-08-22 11:37:19.603 [info] Extensions: No changes found during synchronizing extensions.
+2024-08-22 11:37:19.650 [info] Profiles: No changes found during synchronizing profiles.
+2024-08-22 11:37:19.656 [info] Syncing profile. newvscode
+2024-08-22 11:37:19.872 [info] Settings (newvscode): No changes found during synchronizing settings.
+2024-08-22 11:37:19.942 [info] Keybindings (newvscode): No changes found during synchronizing keybindings.
+2024-08-22 11:37:19.956 [info] Snippets (newvscode): No changes found during synchronizing snippets.
+2024-08-22 11:37:19.965 [info] Tasks (newvscode): No changes found during synchronizing tasks.
+2024-08-22 11:37:19.980 [info] GlobalState (newvscode): No changes found during synchronizing ui state.
+2024-08-22 11:37:20.124 [info] Extensions (newvscode): No changes found during synchronizing extensions.
+2024-08-22 11:37:20.133 [info] Syncing profile. vscode_config
+2024-08-22 11:37:20.305 [info] Settings (vscode_config): No changes found during synchronizing settings.
+2024-08-22 11:37:20.331 [info] Keybindings (vscode_config): No changes found during synchronizing keybindings.
+2024-08-22 11:37:20.342 [info] Snippets (vscode_config): No changes found during synchronizing snippets.
+2024-08-22 11:37:20.349 [info] Tasks (vscode_config): No changes found during synchronizing tasks.
+2024-08-22 11:37:20.378 [info] GlobalState (vscode_config): No changes found during synchronizing ui state.
+2024-08-22 11:37:20.484 [info] Extensions (vscode_config): No changes found during synchronizing extensions.
+2024-08-22 11:37:20.490 [info] Sync done. Took 2086ms

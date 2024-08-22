@@ -1,0 +1,46 @@
+2024-08-21 17:34:16.510 [info] (Client) Pylance async client (2024.8.1) started with python extension (2024.12.3)
+2024-08-21 17:34:18.031 [info] [Info  - 5:34:18 PM] (2953) Pylance language server 2024.8.1 (pyright version 1.1.373, commit ee424479) starting
+2024-08-21 17:34:18.089 [info] [Info  - 5:34:18 PM] (2953) Server root directory: file:///home/abhi/.vscode/extensions/ms-python.vscode-pylance-2024.8.1/dist
+2024-08-21 17:34:18.130 [info] [Info  - 5:34:18 PM] (2953) Starting service instance "Llama3"
+2024-08-21 17:34:18.157 [info] [Info  - 5:34:18 PM] (2953) Background analysis(1) root directory: file:///home/abhi/.vscode/extensions/ms-python.vscode-pylance-2024.8.1/dist
+2024-08-21 17:34:18.160 [info] [Info  - 5:34:18 PM] (2953) Background analysis(1) started
+2024-08-21 17:34:18.238 [info] [Info  - 5:34:18 PM] (2953) Setting pythonPath for service "Llama3": "/home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python"
+2024-08-21 17:34:18.239 [info] [Info  - 5:34:18 PM] (2953) Setting environmentName for service "Llama3": "3.12.4 (letest_env venv)"
+2024-08-21 17:34:18.240 [info] [Info  - 5:34:18 PM] (2953) No include entries specified; assuming /home/abhi/Documents/ChatBot/Llama3
+2024-08-21 17:34:18.242 [info] [Info  - 5:34:18 PM] (2953) Auto-excluding **/node_modules
+2024-08-21 17:34:18.243 [info] [Info  - 5:34:18 PM] (2953) Auto-excluding **/__pycache__
+2024-08-21 17:34:18.243 [info] [Info  - 5:34:18 PM] (2953) Auto-excluding **/.*
+2024-08-21 17:34:18.264 [info] [Info  - 5:34:18 PM] (2953) Assuming Python version 3.12.4.final.0
+2024-08-21 17:34:18.391 [info] [Info  - 5:34:18 PM] (2953) Auto-excluding /home/abhi/Documents/ChatBot/Llama3/letest_env
+2024-08-21 17:34:18.392 [info] [Info  - 5:34:18 PM] (2953) No source files found.
+2024-08-21 17:34:19.054 [info] [Info  - 5:34:19 PM] (2953) Indexer background runner(2) root directory: file:///home/abhi/.vscode/extensions/ms-python.vscode-pylance-2024.8.1/dist (index)
+2024-08-21 17:34:19.055 [info] [Info  - 5:34:19 PM] (2953) Indexing(2) started
+2024-08-21 17:34:19.929 [info] [Info  - 5:34:19 PM] (2953) scanned(2) 360 files over 1 exec env
+2024-08-21 17:34:21.032 [info] [Info  - 5:34:21 PM] (2953) [BG(1)] Long operation: analyzing: file:///home/abhi/Documents/ChatBot/Llama3/final_test2.ipynb.py#pylancePrefixCell (2341ms)
+2024-08-21 17:34:23.770 [info] [Info  - 5:34:23 PM] (2953) [IDX(2)] Long operation: index execution environment file:///home/abhi/Documents/ChatBot/Llama3 (3524ms)
+2024-08-21 17:34:23.802 [info] [Info  - 5:34:23 PM] (2953) [IDX(2)] Long operation: index packages file:///home/abhi/Documents/ChatBot/Llama3 (3630ms)
+2024-08-21 17:34:23.802 [info] [Info  - 5:34:23 PM] (2953) indexed(2) 286 files over 1 exec env
+2024-08-21 17:34:23.918 [info] [Info  - 5:34:23 PM] (2953) Indexing finished(2).
+2024-08-21 17:36:27.112 [info] [Info  - 5:36:27 PM] (2953) Setting pythonPath for service "Llama3": "/home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python"
+2024-08-21 17:36:27.113 [info] [Info  - 5:36:27 PM] (2953) Setting environmentName for service "Llama3": "3.12.4 (letest_env venv)"
+2024-08-21 17:36:27.114 [info] [Info  - 5:36:27 PM] (2953) No include entries specified; assuming /home/abhi/Documents/ChatBot/Llama3
+2024-08-21 17:36:27.115 [info] [Info  - 5:36:27 PM] (2953) Auto-excluding **/node_modules
+2024-08-21 17:36:27.115 [info] [Info  - 5:36:27 PM] (2953) Auto-excluding **/__pycache__
+2024-08-21 17:36:27.115 [info] [Info  - 5:36:27 PM] (2953) Auto-excluding **/.*
+2024-08-21 17:36:27.156 [info] [Info  - 5:36:27 PM] (2953) Assuming Python version 3.12.4.final.0
+2024-08-21 17:36:27.330 [info] [Info  - 5:36:27 PM] (2953) Auto-excluding /home/abhi/Documents/ChatBot/Llama3/letest_env
+2024-08-21 17:36:27.336 [info] [Info  - 5:36:27 PM] (2953) Found 4 source files
+2024-08-21 17:36:27.520 [info] [Info  - 5:36:27 PM] (2953) Setting pythonPath for service "Llama3": "/home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python"
+2024-08-21 17:36:27.520 [info] [Info  - 5:36:27 PM] (2953) Setting environmentName for service "Llama3": "3.12.4 (letest_env venv)"
+2024-08-21 17:36:27.520 [info] [Info  - 5:36:27 PM] (2953) No include entries specified; assuming /home/abhi/Documents/ChatBot/Llama3
+2024-08-21 17:36:27.520 [info] [Info  - 5:36:27 PM] (2953) Auto-excluding **/node_modules
+2024-08-21 17:36:27.520 [info] [Info  - 5:36:27 PM] (2953) Auto-excluding **/__pycache__
+2024-08-21 17:36:27.520 [info] [Info  - 5:36:27 PM] (2953) Auto-excluding **/.*
+2024-08-21 17:36:27.555 [info] [Info  - 5:36:27 PM] (2953) Assuming Python version 3.12.4.final.0
+2024-08-21 17:36:27.625 [info] [Info  - 5:36:27 PM] (2953) Auto-excluding /home/abhi/Documents/ChatBot/Llama3/letest_env
+2024-08-21 17:36:27.627 [info] [Info  - 5:36:27 PM] (2953) Found 4 source files
+2024-08-21 17:36:27.907 [info] [Info  - 5:36:27 PM] (2953) Indexer background runner(3) root directory: file:///home/abhi/.vscode/extensions/ms-python.vscode-pylance-2024.8.1/dist (index)
+2024-08-21 17:36:27.907 [info] [Info  - 5:36:27 PM] (2953) Indexing(3) started
+2024-08-21 17:36:28.707 [info] [Info  - 5:36:28 PM] (2953) scanned(3) 360 files over 1 exec env
+2024-08-21 17:36:29.154 [info] [Info  - 5:36:29 PM] (2953) indexed(3) 286 files over 1 exec env
+2024-08-21 17:36:29.331 [info] [Info  - 5:36:29 PM] (2953) Indexing finished(3).

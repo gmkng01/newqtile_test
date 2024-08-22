@@ -1,0 +1,100 @@
+2024-08-22 11:46:29.391 [info] Experiment 'pythonCreateEnvOnPipInstall' is active
+2024-08-22 11:46:29.391 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-08-22 11:46:29.391 [info] Experiment 'pythonSurveyNotification' is active
+2024-08-22 11:46:29.391 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-08-22 11:46:29.391 [info] Experiment 'pythonTestAdapter' is active
+2024-08-22 11:46:29.391 [error] Reading directory to watch failed [Error: ENOENT: no such file or directory, scandir '/home/abhi/newqtile_test/.pixi/envs'
+	at Object.readdirSync (node:fs:1509:26)
+	at t.readdirSync (node:electron/js2c/node_init:2:11418)
+	at /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/out/client/extension.js:2:586747
+	at /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/out/client/extension.js:2:586938
+	at Array.map (<anonymous>)
+	at d.initWatchers (/home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/out/client/extension.js:2:586656)
+	at async d.ensureWatchersReady (/home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/out/client/extension.js:2:543067)] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/abhi/newqtile_test/.pixi/envs'
+}
+2024-08-22 11:46:29.391 [error] Dir "/home/abhi/newqtile_test/.pixi/envs" is not watchable (directory does not exist)
+2024-08-22 11:46:29.391 [info] Default formatter is set to null for workspace /home/abhi/newqtile_test
+2024-08-22 11:46:29.391 [info] Starting Environment refresh
+2024-08-22 11:46:29.391 [info] > pixi --version
+2024-08-22 11:46:29.391 [error] [Error: spawn pixi ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn pixi',
+  path: 'pixi',
+  spawnargs: [ '--version' ]
+}
+2024-08-22 11:46:29.391 [info] > hatch env show --json
+2024-08-22 11:46:29.391 [info] cwd: .
+2024-08-22 11:46:29.505 [info] > pyenv which python
+2024-08-22 11:46:29.505 [info] cwd: .
+2024-08-22 11:46:29.633 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:29.716 [info] > conda info --json
+2024-08-22 11:46:29.740 [info] > python -c "import sys;print(sys.executable)"
+2024-08-22 11:46:29.805 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:31.109 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:31.671 [info] Environments refresh finished (event): 2707 milliseconds
+2024-08-22 11:46:31.671 [info] Environments refresh paths discovered: 2707 milliseconds
+2024-08-22 11:46:31.679 [info] Environment refresh took 2716 milliseconds
+2024-08-22 11:46:31.692 [info] > pyenv which python
+2024-08-22 11:46:31.692 [info] cwd: .
+2024-08-22 11:46:31.828 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:32.116 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:32.117 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:32.169 [info] Python interpreter path: /usr/bin/python
+2024-08-22 11:46:32.172 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:32.528 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:33.112 [warning] Shell integration may not be active, environment activated may be overridden by the shell.
+2024-08-22 11:46:33.114 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:33.117 [warning] could not find a pixi interpreter for the interpreter at /usr/bin/python
+2024-08-22 11:46:33.150 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:33.153 [warning] could not find a pixi interpreter for the interpreter at /usr/bin/python
+2024-08-22 11:46:33.170 [info] > . /usr/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariables.py
+2024-08-22 11:46:33.170 [info] shell: bash
+2024-08-22 11:46:33.545 [info] > python ~/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariables.py
+2024-08-22 11:46:33.545 [info] shell: bash
+2024-08-22 11:46:33.622 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:34.571 [info] Starting Pylance language server.
+2024-08-22 11:46:34.575 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:34.587 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:34.597 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:34.628 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:34.637 [info] Setting environment variable _CE_M in collection to  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:34.637 [info] Setting environment variable CONDA_PREFIX in collection to /usr {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:34.637 [info] Setting environment variable CONDA_PROMPT_MODIFIER in collection to (base)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:34.637 [info] Setting environment variable _CE_CONDA in collection to  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:34.637 [info] Setting environment variable CONDA_SHLVL in collection to 1 {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:34.637 [info] Setting environment variable CONDA_DEFAULT_ENV in collection to base {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:34.637 [info] Prepending environment variable PATH in collection with /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash:/usr/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:34.637 [info] Prepending environment variable PS1 in collection with (usr)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:34.639 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:34.974 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:35.645 [info] Send text to terminal: python /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+2024-08-22 11:46:35.989 [info] Shell integration status changed, can confirm it's working.
+2024-08-22 11:46:35.991 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:35.992 [warning] could not find a pixi interpreter for the interpreter at /usr/bin/python
+2024-08-22 11:46:35.998 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:36.005 [warning] could not find a pixi interpreter for the interpreter at /usr/bin/python
+2024-08-22 11:46:36.023 [info] > . /usr/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariables.py
+2024-08-22 11:46:36.024 [info] shell: bash
+2024-08-22 11:46:36.355 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:37.359 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:46:37.363 [info] Setting environment variable _CE_M in collection to  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:37.363 [info] Setting environment variable CONDA_PREFIX in collection to /usr {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:37.363 [info] Setting environment variable CONDA_PROMPT_MODIFIER in collection to (base)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:37.363 [info] Setting environment variable _CE_CONDA in collection to  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:37.363 [info] Setting environment variable CONDA_SHLVL in collection to 1 {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:37.363 [info] Setting environment variable CONDA_DEFAULT_ENV in collection to base {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:37.363 [info] Prepending environment variable PATH in collection with /home/abhi/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash:/usr/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:37.363 [info] Prepending environment variable PS1 in collection with (usr)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-08-22 11:46:37.365 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:48:32.177 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:48:32.179 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:48:32.192 [warning] could not find a pixi interpreter for the interpreter at python
+2024-08-22 11:48:32.197 [warning] could not find a pixi interpreter for the interpreter at python

@@ -1,0 +1,2 @@
+[Warn  - 11:50:42 AM] 06:20:42.739 WARNING ⛔️ Environment variable configuration is being deprecated, please use workspace configuration. The following environment variables were used: shfmt
+[Warn  - 11:50:44 AM] 06:20:43.342 WARNING ⛔️ ShellCheck: disabling linting as no executable was found at path 'shellcheck'

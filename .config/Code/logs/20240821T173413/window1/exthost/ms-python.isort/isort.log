@@ -1,0 +1,71 @@
+2024-08-21 17:34:15.468 [info] Name: isort
+2024-08-21 17:34:15.468 [info] Module: isort
+2024-08-21 17:34:15.468 [info] Python extension loading
+2024-08-21 17:34:15.468 [info] Waiting for interpreter from python extension.
+2024-08-21 17:34:15.468 [info] No interpreter found from setting isort.interpreter
+2024-08-21 17:34:15.468 [info] Getting interpreter from ms-python.python extension for workspace /home/abhi/Documents/ChatBot/Llama3
+2024-08-21 17:34:15.468 [info] Python extension loaded
+2024-08-21 17:34:15.468 [info] Interpreter from ms-python.python extension for /home/abhi/Documents/ChatBot/Llama3: /home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python
+2024-08-21 17:34:15.468 [info] No interpreter found from setting isort.interpreter
+2024-08-21 17:34:15.468 [info] Getting interpreter from ms-python.python extension for workspace /home/abhi/Documents/ChatBot/Llama3
+2024-08-21 17:34:15.468 [info] Interpreter from ms-python.python extension for /home/abhi/Documents/ChatBot/Llama3: /home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python
+2024-08-21 17:34:15.468 [info] Server run command: /home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python /home/abhi/.vscode/extensions/ms-python.isort-2023.10.1/bundled/tool/lsp_server.py
+2024-08-21 17:34:15.468 [info] Server: Start requested.
+2024-08-21 17:34:16.508 [info] CWD Server: /home/abhi/Documents/ChatBot/Llama3
+2024-08-21 17:34:16.549 [info] sys.path used to run Server:
+   /home/abhi/.vscode/extensions/ms-python.isort-2023.10.1/bundled/libs
+   /home/abhi/.vscode/extensions/ms-python.isort-2023.10.1/bundled/tool
+   /usr/lib/python312.zip
+   /usr/lib/python3.12
+   /usr/lib/python3.12/lib-dynload
+   /home/abhi/Documents/ChatBot/Llama3/letest_env/lib/python3.12/site-packages
+2024-08-21 17:34:16.566 [info] Settings used to run Server:
+[
+    {
+        "check": false,
+        "cwd": "/home/abhi/Documents/ChatBot/Llama3",
+        "workspace": "file:///home/abhi/Documents/ChatBot/Llama3",
+        "args": [],
+        "path": [],
+        "severity": {
+            "W": "Warning",
+            "E": "Hint"
+        },
+        "interpreter": [
+            "/home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python"
+        ],
+        "importStrategy": "useBundled",
+        "showNotifications": "off"
+    }
+]
+
+2024-08-21 17:34:16.571 [info] Global settings:
+{
+    "check": false,
+    "cwd": "/home/abhi",
+    "workspace": "/home/abhi",
+    "args": [],
+    "path": [],
+    "severity": {
+        "W": "Warning",
+        "E": "Hint"
+    },
+    "interpreter": [],
+    "importStrategy": "useBundled",
+    "showNotifications": "off"
+}
+
+2024-08-21 17:34:16.572 [info] /home/abhi/Documents/ChatBot/Llama3/letest_env/bin/python -m isort --version-number
+2024-08-21 17:34:16.581 [info] CWD Linter: /home/abhi/Documents/ChatBot/Llama3
+2024-08-21 17:34:16.582 [info] Version info for isort running for /home/abhi/Documents/ChatBot/Llama3:
+5.11.5
+
+2024-08-21 17:34:16.598 [info] SUPPORTED isort>=5.10.1
+FOUND isort==5.11.5
+
+2024-08-21 17:34:16.629 [info] [Trace - 5:34:16 PM] Sending request 'textDocument/codeAction - (1)'.
+2024-08-21 17:34:16.740 [info] [Trace - 5:34:16 PM] Received notification 'textDocument/publishDiagnostics'.
+2024-08-21 17:34:16.745 [info] [Trace - 5:34:16 PM] Received notification 'textDocument/publishDiagnostics'.
+2024-08-21 17:34:16.747 [info] [Trace - 5:34:16 PM] Received notification 'textDocument/publishDiagnostics'.
+2024-08-21 17:34:16.749 [info] [Trace - 5:34:16 PM] Received response 'textDocument/codeAction - (1)' in 120ms.
+2024-08-21 17:34:18.054 [info] [Trace - 5:34:18 PM] Sending request 'textDocument/codeAction - (2)'.

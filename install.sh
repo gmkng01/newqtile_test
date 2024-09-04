@@ -55,6 +55,7 @@ programs=(
     "kdeconnect"
     "volctl"
 	"pcmanfm"
+	"zsh"
 )
 
 # Update the package database and upgrade the system
@@ -100,6 +101,7 @@ aur_programs=(
     "volctl"
     "qtile-extras"
     "nomacs"
+	"zsh-theme-powerlevel10k-git"
 )
 
 # Install each AUR program via yay
@@ -127,6 +129,10 @@ cp -T .bashrc ~/.bashrc
 # Copy .Xmodmap to the home directory
 echo "Copying .Xmodmap to the home directory..."
 cp -T .bashrc ~/.Xmodmap
+
+# Copy .zshrc to the home directory
+echo "Copying zshrc to the home directory..."
+cp -T .zshrc ~/.zshrc
 
 # Adding Xmodmap file to xinitrc so it can run automaticly
 echo "Adding Xmodmap file to xinitr"

@@ -75,7 +75,7 @@ mykeys = [
         Key(["mod4", "shift"], "r", lazy.spawn(vriable["reboot"]),
             desc='Reboot'),
 
-        Key(["mod4", "shift"], "s", lazy.spawn(vriable["suspend"]), 
+        Key(["mod4", "shift"], "l", lazy.spawn(vriable["suspend"]), 
             desc='System Suspend'),
 
         Key(["mod4", "shift"], "d", lazy.spawn(vriable["power_menu"])),
@@ -120,11 +120,11 @@ mykeys = [
             lazy.layout.decrease_nmaster(),
             desc='Shrink window (MonadTall), decrease number in master pane (Tile)'
             ),
-        Key(["mod4", "shift"], "l",
-            lazy.layout.grow(),
-            lazy.layout.increase_nmaster(),
-            desc='Expand window (MonadTall), increase number in master pane (Tile)'
-            ),
+        # Key(["mod4", "shift"], "l",
+        #     lazy.layout.grow(),
+        #     lazy.layout.increase_nmaster(),
+        #     desc='Expand window (MonadTall), increase number in master pane (Tile)'
+        #     ),
         Key(["mod4"], "n",
             lazy.layout.normalize(),
             desc='normalize window size ratios'

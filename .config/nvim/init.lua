@@ -1,8 +1,4 @@
 vim.g.mapleader = " "
-vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('', '<C-p>', '"+P', { noremap = true, silent = true })
--- opt.clipboard:append("unnamedplus") -- use the system clipboard as default register
-
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -22,3 +18,22 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
+
+local keymap = vim.keymap -- for conciseness
+
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-p>', '"+P', { noremap = true, silent = true })
+
+
+
+-- Call the function when the dashboard is set up
+local alpha = require("alpha")
+local dashboard = require("alpha.themes.dashboard")
+
+-- Set up the dashboard as usual
+alpha.setup(dashboard.opts)
+
+-- vim.o.cmdheight = 0  -- Minimize command line height (Neovim 0.8+)
+vim.o.laststatus = 3  -- Only show one global statusline instead of per buffer
+
+

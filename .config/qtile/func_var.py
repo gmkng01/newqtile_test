@@ -1,10 +1,10 @@
 import colors, os
 import Color_picker as cp
-import subprocess
+# import subprocess
 
 home = os.path.expanduser('~')
 
-co = colors.vintage
+co = cp.wall_color
 fix = colors.changable
 
 bk = co['bk']
@@ -20,10 +20,6 @@ widget_font = 'NFS font'
 widget_font_symbols = 'JetBrainsMono Nerd Font Italic'
 
 
-
-
-
-
 # Template for the Rofi config file
 rasi_template = """
 /* Rofi Color Theme */
@@ -36,7 +32,6 @@ rasi_template = """
 }}
 """
 
-# Format the template with colors from the colors module
 rasi_content = rasi_template.format(
    bk=bk,
    fr=fr,
@@ -71,14 +66,14 @@ va = {
     "file_manager":             "pcmanfm",
     "bluetooth":                "blueman-manager",
     "theme_changer":            f"{home}/.config/qtile/scripts/theme_changer.sh",
-    "vol_mute":                 f"{home}/.config/qtile/scripts/vol.sh mute",
-    "vol_down":                 f"{home}/.config/qtile/scripts/vol.sh down",
-    "vol_up":                   f"{home}/.config/qtile/scripts/vol.sh up",
-    "bright_up":                f"{home}/.config/qtile/scripts/bright.sh up",
-    "bright_down":              f"{home}/.config/qtile/scripts/bright.sh down",
-    "shutdown":                 f"{home}/.config/qtile/scripts/shutdown_confirm.sh",
-    "reboot":                   f"{home}/.config/qtile/scripts/reboot_confirm.sh",
-    "suspend":                  f"{home}/.config/qtile/scripts/suspend_confirm.sh",
+    "vol_mute":                 f"{home}/.config/scripts/vol.sh mute",
+    "vol_down":                 f"{home}/.config/scripts/vol.sh down",
+    "vol_up":                   f"{home}/.config/scripts/vol.sh up",
+    "bright_up":                f"{home}/.config/scripts/bright.sh up",
+    "bright_down":              f"{home}/.config/scripts/bright.sh down",
+    "shutdown":                 f"{home}/.config/scripts/shutdown_confirm.sh",
+    "reboot":                   f"{home}/.config/scripts/reboot_confirm.sh",
+    "suspend":                  f"{home}/.config/scripts/suspend_confirm.sh",
     "power_menu":               f'{home}/.config/rofi/powermenu/type-1/powermenu.sh',
     "screenshot_full":          'sh -c "xfce4-screenshooter --fullscreen --clipboard --save ~/Pictures/Screenshots/Screenshot_$(date +\'%Y-%m-%d_%H:%M:%S\').png"',
     "screenshot_window":        'sh -c "xfce4-screenshooter -w --clipboard --save ~/Pictures/Screenshots/Screenshot_$(date +\'%Y-%m-%d_%H:%M:%S\').png"',

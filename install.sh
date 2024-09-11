@@ -56,6 +56,7 @@ programs=(
     "volctl"
 	"pcmanfm"
 	"zsh"
+	"ripgrep"
 )
 
 # Update the package database and upgrade the system

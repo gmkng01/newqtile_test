@@ -4,7 +4,8 @@ return {
 	config = function()
 		require('lualine').setup({
 			options = {
-				theme = 'dracula'
+				theme = 'dracula',
+				-- padding = { left = 0, right = 0 },
 			}
 		})
 	end

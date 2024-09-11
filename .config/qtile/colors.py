@@ -135,18 +135,4 @@ dark_sky2 = {
     'gr':               '#FF9800'
 }
 
-# from colorthief import ColorThief
-# import colorsys
 
-
-
-
-# bk: #111919
-# bk2: #494B42
-# fr: #9B8975
-# fr2: #B9BCA6
-# gr: #C9D6D0
-
-
-
-# {'bk': '#E2D0BB', 'bk2': '#28302D', 'fr': '#7BBDBA', 'fr2': '#93754E', 'gr': '#93754E'}

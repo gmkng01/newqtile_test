@@ -6,7 +6,7 @@ from libqtile.lazy import lazy
 from battery import BatteryWidget
 from libqtile.config import Group, Match, Screen
 from func_var import bk, fr, bk2, fr2, gr, trn, urgent  ## Colors
-from func_var import widget_font, widget_font_symbols, home  ## Font
+from func_var import widget_font, widget_font_symbols  ## Font
 
 from qtile_extras import  widget as xwidget
 
@@ -20,7 +20,7 @@ mybar = [Screen
                         text='ё',
                         background = bk,
                         foreground = fr,
-                        fontsize = 25,
+                        fontsize = 24,
                         # mouse_callbacks = {'Button1': rofi_menu,},
                         padding = 4,  
                         font = widget_font,
@@ -32,11 +32,11 @@ mybar = [Screen
                         background = bk2,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
                 widget.GroupBox(
                         font="Symbols Nerd Font",
-                        fontsize=28,
+                        fontsize=20,
                         margin_y=3,
                         margin_x=0,
                         padding_y=8,
@@ -62,7 +62,7 @@ mybar = [Screen
                         background = bk,
                         foreground = bk2,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
                                 
                 widget.CurrentLayout(
@@ -70,7 +70,7 @@ mybar = [Screen
                         background=bk,
                         foreground=fr,
                         font = widget_font,
-                        fontsize = 19
+                        fontsize = 16
                         ),
                 
                 widget.TextBox(
@@ -79,7 +79,7 @@ mybar = [Screen
                         background = bk2,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 widget.WindowCount(
@@ -88,7 +88,7 @@ mybar = [Screen
                         foreground=fr2,
                         show_zero=True,
                         font = widget_font,
-                        fontsize = 19,
+                        fontsize = 16,
                         mouse_callbacks = {'Button1':lazy.layout.next()}
                         ),                    
                         
@@ -98,7 +98,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk2,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 widget.TextBox(
@@ -107,7 +107,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 widget.TextBox(
@@ -116,7 +116,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 # NumLockIndicator(
@@ -141,7 +141,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 widget.TextBox(
@@ -150,7 +150,7 @@ mybar = [Screen
                         background = trn,
                         foreground = bk,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 widget.TextBox(
@@ -159,12 +159,12 @@ mybar = [Screen
                         background = trn,
                         foreground = bk2,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),                
                         
                 widget.WidgetBox(
                         font = 'Algol',
-                        fontsize = 50,
+                        fontsize = 45,
                         text_closed = '«',
                         text_open = "»",
                         background = bk2,
@@ -176,16 +176,16 @@ mybar = [Screen
                                         background = bk2,
                                         foreground = bk,
                                         padding = 0,
-                                        fontsize = 30
+                                        fontsize = 24
                                         ),
                                 widget.Net(
-                                        format = '« {down} » {up}   ',
+                                        format = '« {down} » {up} ',
                                         font = widget_font,
-                                        fontsize = 19,
+                                        fontsize = 16,
                                         # max_chars = 14,
                                         padding = 5,
                                         # prefix = 100
-                                        width = 200,
+                                        width = 150,
                                         foreground = fr,
                                         background =  bk
                                         ),
@@ -195,13 +195,13 @@ mybar = [Screen
                                         background = bk2,
                                         foreground = bk,
                                         padding = 0,
-                                        fontsize = 30
+                                        fontsize = 24
                                         ),
                                 widget.Memory(
                                         fmt = "{}",
                                         font = widget_font,
-                                        fontsize = 18,
-                                        width = 165,
+                                        fontsize = 16,
+                                        width = 155,
                                         foreground = fr2,
                                         background = bk2
                                         ),
@@ -214,50 +214,50 @@ mybar = [Screen
                         background = trn,
                         foreground = bk2,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 widget.TextBox(
                         text = '',
                         font = widget_font_symbols,
                         background = trn,
-                        foreground = bk,
+                        foreground = fr,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 widget.Clock(
                         font = widget_font,
-                        foreground = fr,
-                        background =  bk,
-                        fontsize = 18,
-                        format=' %d %b %a - %H:%M  ',                           
+                        foreground = bk,
+                        background =  fr,
+                        fontsize = 16,
+                        format='%d %b %a - %H:%M ',                           
                         ),
 
                 widget.TextBox(
                         text = '',
                         font = widget_font_symbols,
-                        background = bk2,
-                        foreground = bk,
+                        background = bk,
+                        foreground = fr,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
                 widget.TextBox(
                         text = '',
                         font = widget_font_symbols,
-                        background = bk2,
+                        background = bk,
                         foreground = fr,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),                
 
                 BatteryWidget(
                         font=widget_font,
-                        fontsize=18,
+                        fontsize=16,
                         background=fr,
                         foreground = bk,
-                        low_battery_script=f"{home}/.config/qtile/scripts/battery_low.sh"
+                        # low_battery_script=f"{home}/.config/qtile/scripts/battery_low.sh"
                         ),
 
                 widget.TextBox(
@@ -266,30 +266,30 @@ mybar = [Screen
                         background = bk,
                         foreground = fr,
                         padding = 0,
-                        fontsize = 30
+                        fontsize = 24
                         ),
 
-                xwidget.Bluetooth(
-                        background = bk,
-                        foreground = fr,
-                        default_text = '󰂯 ',
-                        fontsize = 18,
-                        device_battery_format = ' ({battery}%)',
-                        device_format = 'Device: {name}{battery_level} [{symbol}]',
-                        highlight_colour = fr,
-                        menu_background = bk,
-                        menu_font = widget_font,
-                        menu_fontsize = 15,
-                        menu_offset_x = -10,
-                        menu_offset_y = 0,
-                        menu_width = 300,
-                        mouse_callbacks = {'Button1': lazy.spawn('blueman-manager'), 'Button2': lazy.spawn('blueman-adapters')},
-                        # opacity = 0.9,
-                        # scroll = True,
-                ), 
+                # xwidget.Bluetooth(
+                #         background = bk,
+                #         foreground = fr,
+                #         default_text = '󰂯 ',
+                #         fontsize = 18,
+                #         device_battery_format = ' ({battery}%)',
+                #         device_format = 'Device: {name}{battery_level} [{symbol}]',
+                #         highlight_colour = fr,
+                #         menu_background = bk,
+                #         menu_font = widget_font,
+                #         menu_fontsize = 15,
+                #         menu_offset_x = -10,
+                #         menu_offset_y = 0,
+                #         menu_width = 300,
+                #         mouse_callbacks = {'Button1': lazy.spawn('blueman-manager'), 'Button2': lazy.spawn('blueman-adapters')},
+                #         # opacity = 0.9,
+                #         # scroll = True,
+                # ), 
                                                 
                 ],
-                background=trn, size=26, margin=[0, 85, 0, 0],
+                background=trn, size=26, margin=[0, 76, 0, 0],
         )
         )
 ]

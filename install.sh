@@ -55,7 +55,7 @@ programs=(
     "kdeconnect"
     "volctl"
 	"pcmanfm"
-	"zsh"
+	# "zsh"
 	"ripgrep"
 )
 

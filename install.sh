@@ -146,6 +146,8 @@ echo "Line added to $TEXT_FILE"
 echo "Copying 50-libinput.conf and 10-serverflags.conf to /etc/X11/xorg.conf.d/..."
 sudo cp 50-libinput.conf /etc/X11/xorg.conf.d/
 sudo cp 10-serverflags.conf /etc/X11/xorg.conf.d/
+echo "Copying thunderbolt configration"
+sudo cp 99-removable.rules /etc/udev/rules.d/
 
 # Enable Bluetooth service
 echo "Enabling Bluetooth service..."

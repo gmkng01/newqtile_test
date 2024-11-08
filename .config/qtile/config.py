@@ -40,10 +40,10 @@ layouts = [
 floating_layout = Floating(
     float_rules=[
         *Floating.default_float_rules,
-        Match(wm_class='blueman-manager'),     # Blueman bluetooth manager
-        Match(wm_class='pavucontrol'),      # Pavucontrol
-        Match(wm_class='kdeconnect-app')
-      #   Match(title='Calculator'),  # Example: Calculator window
+        Match(wm_class='blueman-manager'),   # Blueman bluetooth manager
+        Match(wm_class='pavucontrol'),       # Pavucontrol
+        Match(wm_class='kdeconnect-app')     # Conectivity to the Smartphone
+      #   Match(title='Calculator'),         # Example: Calculator window
     ]
 )
 

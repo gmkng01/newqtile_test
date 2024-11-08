@@ -195,7 +195,7 @@ mybar = [Screen
                                         background = bk2,
                                         foreground = bk,
                                         padding = 0,
-                                        fontsize = 24
+                                        fontsize = 30
                                         ),
                                 widget.Memory(
                                         fmt = "{}",

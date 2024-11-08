@@ -3,7 +3,6 @@
 
 from libqtile import widget
 
-# Function to get battery percentage and charger status
 def get_battery_info():
 
     battery_percentage = open("/sys/class/power_supply/BAT1/capacity").read().strip()

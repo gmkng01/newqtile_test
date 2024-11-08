@@ -79,13 +79,13 @@ case $choice in
         sed -i '/co =/c\co = colors.light_chocalate' $config && qtile cmd-obj -o cmd -f restart &;;
 
     'Choose According to the wallpaper')
-        sed -i '/co =/c\co = cp.wall_color' $config && qtile cmd-obj -o cmd -f restart && source ./color_changer.sh  &;;
+        sed -i '/co =/c\co = cp.wall_color' $config && qtile cmd-obj -o cmd -f restart && source ./color_changer.sh && ~/.config/qtile/trayer.py &;;
 
 
     'quit')
         echo "No theme chosen" && exit 1 ;;
 esac
 
-sleep 1 
+sleep 3
 
- ~/.config/qtile/trayer.py
+~/.config/qtile/trayer.py

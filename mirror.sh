@@ -15,4 +15,5 @@ Server = https://mirror.tmmworkshop.com/archlinux/\$repo/os/\$arch
 Server = https://mirror.qctronics.com/archlinux/\$repo/os/\$arch
 Server = https://europe.mirror.pkgbuild.com/\$repo/os/\$arch
 Server = https://mirror2.sl-chat.ru/archlinux/\$repo/os/\$arch
-Server = https://archmirror.it/repos/\$repo/os/\$arch" | sudo tee /etc/pacman.d/mirrorlist
+Server = https://archmirror.it/repos/\$repo/os/\$arch" | sudo tee /etc/
+

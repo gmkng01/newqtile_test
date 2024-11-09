@@ -103,6 +103,7 @@ aur_programs=(
     "qtile-extras"
     "nomacs"
 	"zsh-theme-powerlevel10k-git"
+    "brightnessctl"
 )
 
 # Install each AUR program via yay

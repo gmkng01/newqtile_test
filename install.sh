@@ -57,6 +57,7 @@ programs=(
 	"pcmanfm"
 	# "zsh"
 	"ripgrep"
+    "xfce4-power-manager"
 )
 
 # Update the package database and upgrade the system

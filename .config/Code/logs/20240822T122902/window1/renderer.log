@@ -1,8 +1,0 @@
-2024-08-22 12:29:02.877 [info] Started local extension host with pid 1910.
-2024-08-22 12:29:03.132 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
-2024-08-22 12:29:05.552 [info] [perf] Render performance baseline is 20ms
-2024-08-22 12:29:05.946 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.deleteBuildDirOnCleanCconfigure.description.
-2024-08-22 12:30:34.705 [info] Started local extension host with pid 4884.
-2024-08-22 12:30:35.110 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
-2024-08-22 12:30:37.677 [info] [perf] Render performance baseline is 30ms
-2024-08-22 12:30:37.776 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.deleteBuildDirOnCleanCconfigure.description.

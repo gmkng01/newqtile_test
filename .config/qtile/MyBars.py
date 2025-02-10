@@ -7,15 +7,14 @@ from battery import BatteryWidget
 from libqtile.config import Group, Match, Screen
 from func_var import bk, fr, bk2, fr2, gr, trn, urgent  ## Colors
 from func_var import widget_font, widget_font_symbols  ## Font
-
-from qtile_extras import  widget as xwidget
-
+# from qtile_extras import  widget as xwidget
 # from test import NumLockIndicator
 
-mybar = [Screen
-         (top = Bar
-          (
-              [
+mybar = [
+    Screen
+    (
+        top = Bar
+        ([
                 widget.Spacer(length=5, 
                               background=trn
                               ),
@@ -98,7 +97,7 @@ mybar = [Screen
                         disable_drag=True, 
                         # **arrow_powerlineLeft                     
                         ),
-                        
+
                 widget.TextBox(
                         text = '',
                         font = widget_font_symbols,
@@ -320,102 +319,13 @@ mybar = [Screen
         )
 ]
 
-
-# Define colors
-bk = "#000000"  # Black
-fr = "#ffffff"  # White
-gray = "#808080"  # Gray
-trn = "#00000000"  # Transparent
-
-mybar2 = [
-    Screen(
-        top=Bar
-        (
-            [
-                widget.Spacer(length=5, background=trn),
-                
-                widget.GroupBox(
-                    font="Symbols Nerd Font",
-                    fontsize=20,
-                    active=fr,
-                    inactive=gray,
-                    rounded=True,
-                    highlight_method="line",
-                    highlight_color=bk,
-                    background=trn,
-                ),
-
-                widget.Spacer(length=10, background=trn),
-                
-                widget.CurrentLayout(
-                    fmt="Layout: {}",
-                    background=trn,
-                    foreground=fr,
-                    font="JetBrainsMono Nerd Font",
-                    fontsize=14,
-                ),
-
-                widget.Spacer(background=trn),  # Push everything to the right
-                
-                widget.WidgetBox(
-                    text_closed="[ + ]",
-                    text_open="[ - ]",
-                    background=trn,
-                    foreground=gray,
-                    fontsize=14,
-                    close_button_location='right',
-                    widgets=[
-                        widget.Memory(
-                            format="RAM: {MemUsed:.0f}MB",
-                            font="JetBrainsMono Nerd Font",
-                            fontsize=14,
-                            foreground=fr,
-                            background=trn,
-                        ),
-                        widget.CPU(
-                            format="CPU: {load_percent}%",
-                            font="JetBrainsMono Nerd Font",
-                            fontsize=14,
-                            foreground=fr,
-                            background=trn,
-                        ),
-                        widget.Net(
-                            format="Net: ↓{down} ↑{up}",
-                            font="JetBrainsMono Nerd Font",
-                            fontsize=14,
-                            foreground=fr,
-                            background=trn,
-                        ),
-                    ],
-                ),
-
-                widget.Spacer(length=10, background=trn),
-                
-                widget.Clock(
-                    font="JetBrainsMono Nerd Font",
-                    foreground=fr,
-                    background=trn,
-                    fontsize=14,
-                    format="%d %b %a - %H:%M",
-                ),
-
-                widget.Spacer(length=5, background=trn),
-            ],
-            background=trn,
-            size=26,
-            margin=[0, 10, 0, 10],
-        )
-    )
-]
-
-
 mygroup = [
     Group('1', label="", matches = [Match(wm_class = vriable['browser'])]),
     Group('2', label="", matches = [Match(wm_class = 'code')], layout='max'),
     Group('3', label=""), 
     Group('4', label="",matches = [Match(wm_class = vriable['file_manager'])]),
     Group('5', label="", matches = [Match(wm_class = "discord"), Match(wm_class="TelegramDesktop")]),
-    Group('6', label="󰯉"),
+    Group('6', label=""),
     Group('7', label="󰬷"),
     Group('8', label="󰬷"),
     ]

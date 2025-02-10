@@ -2,7 +2,6 @@
 
 import subprocess
 from func_var import bk
-# Function to check if a process is running
 def is_process_running(process_name):
     try:
         # Run `pgrep` to check if the process is running
@@ -12,14 +11,12 @@ def is_process_running(process_name):
         print(f"Error checking process: {e}")
         return False
 
-# Function to kill a process
 def kill_process(process_name):
     try:
         subprocess.run(['killall', process_name], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Error killing process: {e}")
 
-# Function to start trayer
 def start_trayer():
     try:
         subprocess.Popen([

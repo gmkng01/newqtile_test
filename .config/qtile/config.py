@@ -1,12 +1,11 @@
 import os
 from func_var import bk, bk2, fr, fr2
 from subprocess import Popen
-from MyBars import mybar, mygroup, mybar2
+from MyBars import mybar, mygroup
 from libqtile import layout, hook
 from libqtile.config import Match
 from libqtile.layout import Floating
 from keybindings import mykeys, mymouse
-
 
 screens =   mybar
 keys =      mykeys
@@ -42,7 +41,9 @@ floating_layout = Floating(
         *Floating.default_float_rules,
         Match(wm_class='blueman-manager'),   # Blueman bluetooth manager
         Match(wm_class='pavucontrol'),       # Pavucontrol
-        Match(wm_class='kdeconnect-app')     # Conectivity to the Smartphone
+        Match(wm_class='kdeconnect-app'),    # Conectivity to the Smartphone
+      #   Match(wm_class='terminator')
+      
       #   Match(title='Calculator'),         # Example: Calculator window
     ]
 )

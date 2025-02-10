@@ -1,5 +1,6 @@
 [global_config]
   dbus = False
+  window_state = maximise
   borderless = True
   extra_styling = False
 [keybindings]
@@ -9,7 +10,7 @@
     background_color = "#1e252c"
     background_darkness = 0.91
     background_type = transparent
-    font = JetBrainsMono Nerd Font Propo Light 15
+    font = JetBrainsMono Nerd Font Propo Light 13
     foreground_color = "#deddda"
     show_titlebar = False
     scrollbar_position = hidden

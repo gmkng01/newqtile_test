@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-alpha='00'
+alpha='40'
 alpha2='66'
 background='#282a36'
 selection='#44475a'
@@ -36,7 +36,7 @@ i3lock \
   --date-color=$font$alpha2 \
   --time-color=$font$alpha2 \
   --screen 1 \
-  --blur 1 \
+  --blur 3 \
   --force-clock \
   --indicator \
   --time-str="%H %M" \
@@ -50,7 +50,7 @@ i3lock \
   --pass-media-keys \
   --pass-screen-keys \
   --pass-volume-keys \
-  --image="/home/abhi/Pictures/Wallpapers/2024-Subaru-WRX-Project-Midnight-Concept-005-2160.jpg" \
+  --image="/home/abhi/Pictures/walls/jhxo81zd70ee1.jpeg" \
   --fill \
   --time-font="NFS Font" \
   --date-font="NFS Font" \
@@ -63,10 +63,10 @@ i3lock \
   --time-size=110 \
   --time-pos="120:942" \
   --date-pos="115:980" \
-  --bar-pos="95:870" \
+  --bar-pos="95:860" \
   --ind-pos="540:942"\
   --bar-base-width=130 \
-  --bar-total-width=470 \
+  --bar-total-width=700 \
   --bar-max-height=300 \
   --bar-indicator \
   --bar-color=$background$alpha \

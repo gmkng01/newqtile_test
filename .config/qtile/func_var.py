@@ -4,7 +4,7 @@ import Color_picker as cp
 
 home = os.path.expanduser('~')
 
-co = cp.wall_color
+co = colors.full_gray
 fix = colors.changable
 
 bk = co['bk']

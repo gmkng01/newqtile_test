@@ -4,6 +4,8 @@ from MyBars import mygroup
 from subprocess import Popen
 from libqtile.lazy import lazy
 from libqtile.config import Key, Click, Drag
+# from libqtile.backend.base import Windows
+from libqtile import qtile
 
 home = os.path.expanduser('~')
 

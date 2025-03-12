@@ -1,0 +1,27 @@
+00:00:00.097143 VirtualBox GUI VM Selector Window 7.1.6 r167084 linux.amd64 (Jan 27 2025 07:52:25) release log
+00:00:00.097144 Log opened 2025-03-07T13:55:20.220430000Z
+00:00:00.097145 Build Type: release
+00:00:00.097146 OS Product: Linux
+00:00:00.097146 OS Release: 6.13.5-arch1-1
+00:00:00.097147 OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 27 Feb 2025 18:09:44 +0000
+00:00:00.097159 DMI Product Name: ASUS TUF Gaming F17 FX706HF_FX706HF
+00:00:00.097162 DMI Product Version: 1.0
+00:00:00.097165 Firmware type: UEFI
+00:00:00.097339 Secure Boot: Disabled
+00:00:00.097359 Host RAM: 23769MB (23.2GB) total, 21027MB (20.5GB) available
+00:00:00.097360 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.097360 Process ID: 23067
+00:00:00.097361 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.097375 Qt version: 6.8.2
+00:00:00.097642 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.101275 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.405837 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.407998 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 7x33 x 1906x1040
+00:02:13.804856 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:13.836234 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:14.084247 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:14.153934 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.157531 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.173101 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:29.496978 GUI: UICommon: Handling aboutToQuit request..
+00:02:30.186429 GUI: UICommon: aboutToQuit request handled!

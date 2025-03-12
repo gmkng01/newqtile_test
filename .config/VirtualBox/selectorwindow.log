@@ -1,0 +1,21 @@
+00:00:00.112691 VirtualBox GUI VM Selector Window 7.1.6 r167084 linux.amd64 (Jan 27 2025 07:52:25) release log
+00:00:00.112692 Log opened 2025-03-12T08:56:05.937922000Z
+00:00:00.112692 Build Type: release
+00:00:00.112694 OS Product: Linux
+00:00:00.112694 OS Release: 6.13.5-arch1-1
+00:00:00.112694 OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 27 Feb 2025 18:09:44 +0000
+00:00:00.112707 DMI Product Name: ASUS TUF Gaming F17 FX706HF_FX706HF
+00:00:00.112711 DMI Product Version: 1.0
+00:00:00.112714 Firmware type: UEFI
+00:00:00.112891 Secure Boot: Disabled
+00:00:00.112910 Host RAM: 23769MB (23.2GB) total, 22151MB (21.6GB) available
+00:00:00.112911 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.112912 Process ID: 4356
+00:00:00.112912 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.112924 Qt version: 6.8.2
+00:00:00.113551 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.117654 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.467439 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.469522 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 967x33 x 946x1040
+00:00:07.663246 GUI: UICommon: Handling aboutToQuit request..
+00:00:08.900188 GUI: UICommon: aboutToQuit request handled!

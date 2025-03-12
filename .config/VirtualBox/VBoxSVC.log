@@ -1,0 +1,51 @@
+00:00:00.000189 main     VirtualBox XPCOM Server 7.1.6 r167084 linux.amd64 (Jan 27 2025 07:52:25) release log
+00:00:00.000190 main     Log opened 2025-03-12T08:56:05.865963000Z
+00:00:00.000190 main     Build Type: release
+00:00:00.000192 main     OS Product: Linux
+00:00:00.000192 main     OS Release: 6.13.5-arch1-1
+00:00:00.000192 main     OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 27 Feb 2025 18:09:44 +0000
+00:00:00.000205 main     DMI Product Name: ASUS TUF Gaming F17 FX706HF_FX706HF
+00:00:00.000208 main     DMI Product Version: 1.0
+00:00:00.000211 main     Firmware type: UEFI
+00:00:00.000394 main     Secure Boot: Disabled
+00:00:00.000414 main     Host RAM: 23769MB (23.2GB) total, 22153MB (21.6GB) available
+00:00:00.000415 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000416 main     Process ID: 4371
+00:00:00.000416 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.001203 main     IPC socket path: /tmp/.vbox-abhi-ipc/ipcd
+00:00:00.006967 DCon01   VirtualBox: object creation starts
+00:00:00.007000 DCon01   Home directory: '/home/abhi/.config/VirtualBox'
+00:00:00.007219 DCon01   Loading settings file "/home/abhi/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.007800 DCon01   Successfully initialised host USB using sysfs
+00:00:00.012676 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.013138 DCon01   HostDnsMonitor: initializing
+00:00:00.013231 DCon01   NAT: resolv.conf: nameserver 192.168.0.1
+00:00:00.013236 DCon01   HostDnsMonitor: updating information
+00:00:00.013239 DCon01   HostDnsMonitor: old information
+00:00:00.013240 DCon01     no server entries
+00:00:00.013240 DCon01     no domain set
+00:00:00.013241 DCon01     no search string entries
+00:00:00.013242 DCon01   HostDnsMonitor: new information
+00:00:00.013242 DCon01     server 1: 192.168.0.1
+00:00:00.013243 DCon01     no domain set
+00:00:00.013244 DCon01     no search string entries
+00:00:00.014082 DCon01   VD: VDInit finished with VINF_SUCCESS
+00:00:00.014989 DCon01   Platform architecture set to 'x86'
+00:00:00.015182 DCon01   Loading settings file "/home/abhi/VirtualBox VMs/Windows/Windows.vbox" with version "1.19-linux"
+00:00:00.015305 DCon01   Platform architecture set to 'x86'
+00:00:00.015704 DCon01   OCI: Local config file '/home/abhi/.config/VirtualBox/oci_config' does not exist
+00:00:00.015711 DCon01   OCI: Original config file '/home/abhi/.oci/config' does not exist
+00:00:00.015712 DCon01   OCI: Reading profiles finished with status NS_OK
+00:00:00.015714 DCon01   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.015731 DCon01   VirtualBox: object created
+00:00:00.440447 DCon04   NvramStore: Loading 'TpmEmuTpms/permall' from archive
+00:00:00.440467 DCon04   NvramStore: Loading 'efi/nvram' from archive
+00:00:00.518226 DCon04   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:00.828454 DCon04   Saving settings file "/home/abhi/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.831726 DCon04   Finished saving settings file "/home/abhi/.config/VirtualBox/VirtualBox.xml"
+00:00:13.856474 main     VirtualBox: object deletion starts
+00:00:13.856551 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Medium '/home/abhi/VirtualBox VMs/Windows/Windows.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:13.857546 main     HostDnsMonitor: shutting down ...
+00:00:13.857893 main     HostDnsMonitor: shut down
+00:00:13.869459 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d644ad1e-c501-4fc7-9ab6-aa6d763bc540} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:13.869645 main     VirtualBox: object deleted

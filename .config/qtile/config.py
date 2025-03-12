@@ -76,6 +76,6 @@ def autostart():
    tr = f"{home}/.config/qtile/trayer.py"
    Popen(tr, shell=True)
    Popen([home + '/.config/qtile/scripts/battery_low.sh'])
-    # Popen([home + '/.config/rofi/color_changer.sh'])
+   Popen('volctl &')
 
 

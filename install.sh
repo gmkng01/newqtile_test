@@ -134,8 +134,8 @@ echo "Copying .Xmodmap to the home directory..."
 cp -T .bashrc ~/.Xmodmap
 
 # Copy .zshrc to the home directory
-echo "Copying zshrc to the home directory..."
-cp -T .zshrc ~/.zshrc
+# echo "Copying zshrc to the home directory..."
+# cp -T .zshrc ~/.zshrc
 
 # Adding Xmodmap file to xinitrc so it can run automaticly
 echo "Adding Xmodmap file to xinitr"
@@ -169,7 +169,7 @@ git config --global user.name "Abhishek Mishra"
 git config --global user.email gmkng1@gmail.com
 
 mkdir -p  ~/Pictures/Screenshots
-# mkdir -p  ~/Pictures/
+cp -rT walls   ~/Pictures/walls
 
 echo "Installation complete!"
 

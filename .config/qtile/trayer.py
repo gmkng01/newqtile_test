@@ -29,7 +29,7 @@ def start_trayer():
             '--tint', f'0x{bk[1::]}',
             '--margin', '0',
             '--distance', '0',
-            # '--height', '22',
+            '--height', '22',
             '--distancefrom', 'top'
         ])
     except Exception as e:

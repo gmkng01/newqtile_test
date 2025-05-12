@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Current Theme
-theme='/home/abhi/.config/rofi/theme'
+theme='~/.config/rofi/theme'
 
 
 yes='✓ Yes'

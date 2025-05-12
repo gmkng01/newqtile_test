@@ -1,4 +1,0 @@
- 
-New instance of bashtop version: 0.9.25 Pid: 10936
-/tmp/dSvr1fopKOn8/bashtop.psutil:103: DeprecationWarning: 'count' is passed as positional argument
-  name = re.sub( ".*" + rem_line + ".*:", "", line,1).lstrip()

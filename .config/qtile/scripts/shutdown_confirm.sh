@@ -2,7 +2,7 @@
 
 # Current Theme
 # dir="$HOME/.config/rofi/powermenu/type-1"
-theme='/home/abhi/.config/rofi/theme'
+theme='~/.config/rofi/theme'
 
 
 yes='✓ Yes'

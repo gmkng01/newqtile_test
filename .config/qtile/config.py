@@ -18,7 +18,7 @@ layouts = [
        border_normal = f"#66{bk2[1::]}",
        fullscreen_border_width = 0,
        max_border_width = 0,
-       margin =  [7,7,7,7],
+       margin =  [0,0,0,0],
     ),
     layout.Max(
        border_width = 0,
@@ -26,7 +26,7 @@ layouts = [
     #    border_focus = "#ffffff",
        fullscreen_border_width = 0,
        max_border_width = 0,
-       margin =  [7, 7, 7, 7],
+       margin =  [0, 0, 0, 0],
     ),
     layout.Floating(        
        border_width = 0,

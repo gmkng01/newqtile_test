@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # File paths
-colors_json="/home/abhi/.config/rofi/colors.json"
-color_rasi="/home/abhi/.config/rofi/color.rasi"
+colors_json="$HOME/.config/rofi/colors.json"
+color_rasi="$HOME/.config/rofi/color.rasi"
 
 # Function to update color.rasi based on colors.json
 update_colors() {

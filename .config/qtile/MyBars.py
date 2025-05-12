@@ -314,7 +314,7 @@ mybar = [
                 # ), 
                                                 
                 ],
-                background=trn, size=26, margin=[0, 115, 0, 0],
+                background=trn, size=22, margin=[0, 115, 0, 0],
         )
         )
 ]
@@ -324,8 +324,8 @@ mygroup = [
     Group('2', label="", matches = [Match(wm_class = 'code')], layout='max'),
     Group('3', label=""), 
     Group('4', label="",matches = [Match(wm_class = vriable['file_manager'])]),
-    Group('5', label="", matches = [Match(wm_class = "discord"), Match(wm_class="TelegramDesktop")]),
+    Group('5', label="", matches = [Match(wm_class = "discord"), Match(wm_class="TelegramDesktop")]),
     Group('6', label=""),
-    Group('7', label="󰬷"),
-    Group('8', label="󰬷"),
+    Group('7', label=""),
+    Group('8', label=""),
     ]
